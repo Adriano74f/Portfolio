@@ -1,0 +1,169 @@
+<?php
+/**
+ * pages/competences.php — Tableau des compétences
+ */
+$pageTitle   = 'Compétences';
+$currentPage = 'competences';
+$depth       = 1;
+require_once __DIR__ . '/../includes/header.php';
+?>
+
+<main class="page-wrapper">
+
+  <div class="page-header">
+    <div class="page-icon">⚡</div>
+    <h1>Compétences</h1>
+    <p>Compétences techniques et transversales développées durant le BTS SIO SLAM</p>
+  </div>
+
+  <!-- ── Catégories de compétences ── -->
+  <div class="card">
+    <div class="card-title"><span class="ct-icon">🏷️</span>Vue d'ensemble</div>
+    <div class="skills-cols">
+
+      <div class="skill-col">
+        <h3>🌐 Développement Web</h3>
+        <div class="skill-tags">
+          <span class="skill-tag good">HTML5</span>
+          <span class="skill-tag good">CSS3</span>
+          <span class="skill-tag good">PHP</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <h3>🗃️ Bases de données</h3>
+        <div class="skill-tags">
+          <span class="skill-tag good">MySQL</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">phpMyAdmin</span>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <h3>💻 Langages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag good">PHP</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C#</span>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <h3>🛠️ Outils & Méthodes</h3>
+        <div class="skill-tags">
+          <span class="skill-tag good">Git / GitHub</span>
+          <span class="skill-tag good">PhpStorm</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">UML / Merise</span>
+          <span class="skill-tag">GLPI</span>
+        </div>
+      </div>
+
+    </div>
+    <p style="font-size:0.75rem; color:var(--muted); margin-top:12px;">
+      <span style="color:var(--accent)">■</span> Vert = compétence maîtrisée et démontrable
+    </p>
+  </div>
+
+  <!-- ── Tableau détaillé ── -->
+  <div class="card">
+    <div class="card-title"><span class="ct-icon">📊</span>Tableau synthèse des compétences</div>
+
+    <table class="skills-table" role="table" aria-label="Tableau des compétences BTS SIO SLAM">
+      <thead>
+        <tr>
+          <th>Compétence</th>
+          <th>Niveau</th>
+          <th>Contexte d'acquisition</th>
+          <th>Démontrable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML / CSS</td>
+          <td><span class="lv-badge lv-inter">Intermédiaire</span></td>
+          <td class="muted">BTS, projets, portfolio</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td><span class="lv-badge lv-inter">Intermédiaire</span></td>
+          <td class="muted">BTS, PPE, projets perso</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>MySQL / SQL</td>
+          <td><span class="lv-badge lv-inter">Intermédiaire</span></td>
+          <td class="muted">BTS, PPE, exercices</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td><span class="lv-badge lv-debut">Débutant</span></td>
+          <td class="muted">Notions BTS, portfolio</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td><span class="lv-badge lv-debut">Débutant</span></td>
+          <td class="muted">PPE Java, cours BTS</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td><span class="lv-badge lv-debut">Débutant</span></td>
+          <td class="muted">Initiation en cours BTS</td>
+          <td class="tick-no">✗</td>
+        </tr>
+        <tr>
+          <td>Git / GitHub</td>
+          <td><span class="lv-badge lv-inter">Intermédiaire</span></td>
+          <td class="muted">Tous les projets BTS</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>Maintenance PC</td>
+          <td><span class="lv-badge lv-inter">Intermédiaire</span></td>
+          <td class="muted">Stage OCI Informatique</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <tr>
+          <td>GLPI</td>
+          <td><span class="lv-badge lv-debut">Débutant</span></td>
+          <td class="muted">Stage OCI, cours BTS</td>
+          <td class="tick-yes">✔</td>
+        </tr>
+        <!-- 📝 Ajoute / modifie les lignes selon tes compétences réelles -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Compétences transversales ── -->
+  <div class="card">
+    <div class="card-title"><span class="ct-icon">🤝</span>Compétences transversales</div>
+    <div class="skills-cols">
+      <div class="skill-col">
+        <h3>🗣️ Communication</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Expression écrite</span>
+          <span class="skill-tag">Présentation orale</span>
+          <span class="skill-tag">Documentation technique</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h3>🧩 Organisation</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Gestion des priorités</span>
+          <span class="skill-tag">Travail en équipe</span>
+          <span class="skill-tag">Autonomie</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>
