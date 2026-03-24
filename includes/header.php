@@ -32,9 +32,9 @@ $navItems = [
   'bts'          => ['label' => 'BTS SIO',      'icon' => '🎓', 'href' => $root . 'pages/bts.php'],
   'stages'       => ['label' => 'Stages',        'icon' => '🏢', 'href' => $root . 'pages/stages.php'],
   'projets'      => ['label' => 'Projets',       'icon' => '💻', 'href' => $root . 'pages/projets.php'],
-  'veille'       => ['label' => 'Veille',        'icon' => '📡', 'href' => $root . 'pages/veille.php'],
-  'patrimoine'   => ['label' => 'Patrimoine',    'icon' => '🗄️', 'href' => $root . 'pages/patrimoine.php'],
   'competences'  => ['label' => 'Compétences',   'icon' => '⚡', 'href' => $root . 'pages/competences.php'],
+  'veille'       => ['label' => 'Veille',        'icon' => '📡', 'href' => $root . 'pages/veille.php'],
+  'avenir'       => ['label' => 'Avenir',        'icon' => '🎯', 'href' => $root . 'pages/avenir.php'],
   'contact'      => ['label' => 'Contact',       'icon' => '✉️', 'href' => $root . 'pages/contact.php'],
 ];
 ?>
