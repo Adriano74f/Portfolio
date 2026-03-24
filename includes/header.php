@@ -49,7 +49,7 @@ $navItems = [
       <!-- Brand -->
       <a class="navbar-brand" href="<?= $root ?>index.php" aria-label="Accueil">
         <div class="navbar-avatar">
-          <img src="<?= $root ?>img/Photo.jpg" alt="Adriano Ferreira Da Silva" />
+          <img src="<?= $root ?>img/Photo.png" alt="Adriano Ferreira Da Silva" />
         </div>
         <div>
           <span class="navbar-name">Adriano Ferreira Da Silva</span>
