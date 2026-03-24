@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="card visible" style="padding: 32px;">
     <div class="hero">
       <div class="hero-avatar">
-        <img src="img/Photo.jpg" alt="Photo de profil — Adriano Ferreira Da Silva" />
+        <img src="img/Photo.png" alt="Photo de profil — Adriano Ferreira Da Silva" />
       </div>
       <div class="hero-content">
         <h1 class="hero-name">
@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/header.php';
       <div class="info-block">
         <div class="ib-label">Localisation</div>
         <!-- 📝 Mets ta ville -->
-        <p class="ib-value">[[Ta ville]]</p>
+        <p class="ib-value">Annecy</p>
       </div>
     </div>
   </div>
@@ -88,8 +88,8 @@ require_once __DIR__ . '/includes/header.php';
     </p>
     <p class="muted">
       <!-- 📝 Ajoute une seconde phrase sur tes centres d'intérêt, tes projets futurs, etc. -->
-      Rigoureux et curieux, j'aspire à poursuivre mon parcours en intégrant une formation supérieure
-      en développement, tout en continuant à monter en compétences sur les technologies web et les
+      Sérieux et curieux, j'aspire à poursuivre mon parcours en intégrant une formation supérieure
+      en cybersécurité, tout en continuant à monter en compétences sur les technologies web et les
       bonnes pratiques du développement logiciel.
     </p>
   </div>
