@@ -69,11 +69,6 @@ $base = str_repeat('../', $depth ?? 0);
                 <span class="nav-icon">🏢</span> Stages
             </a>
 
-            <a href="<?= $base ?>pages/patrimoine.php"
-               class="nav-link <?= ($currentPage === 'patrimoine') ? 'active' : '' ?>">
-                <span class="nav-icon">🗄️</span> Patrimoine
-            </a>
-
             <a href="<?= $base ?>pages/veille.php"
                class="nav-link <?= ($currentPage === 'veille') ? 'active' : '' ?>">
                 <span class="nav-icon">📡</span> Veille
