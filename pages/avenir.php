@@ -144,22 +144,6 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </div>
-
-    <!-- ── Certifications ── -->
-    <div class="card">
-        <div class="card-title"><span class="ct-icon">🏅</span>Certifications &amp; auto-formation</div>
-        <p class="muted" style="margin-bottom: 14px;">
-            En parallèle de ma formation, je me prépare à passer des certifications reconnues
-            dans le secteur de la cybersécurité pour renforcer mon profil.
-        </p>
-        <div class="tech-tags">
-            <span class="tech-tag">CompTIA Security+ (visé)</span>
-            <span class="tech-tag">ANSSI SecNumAcadémie</span>
-            <span class="tech-tag">TryHackMe / HackTheBox</span>
-            <span class="tech-tag">Certifications en ligne BTS</span>
-        </div>
-    </div>
-
 </main>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>
