@@ -1,26 +1,29 @@
 <?php
 /**
  * includes/header.php
- * $depth : 0 = racine, 1 = pages/
+ * $depth : 0 = racine (index.php), 1 = pages/
  */
 $base = str_repeat('../', $depth ?? 0);
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($pageTitle ?? 'Portfolio') ?> — Adriano Ferreira Da Silva</title>
-    <link rel="stylesheet" href="<?= $base ?>css/style.css">
-    <link rel="icon" href="<?= $base ?>img/favicon.ico" type="image/x-icon">
-</head>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?= htmlspecialchars($pageTitle ?? 'Portfolio') ?> — Adriano Ferreira Da Silva</title>
+        <link rel="stylesheet" href="<?= $base ?>css/style.css">
+        <link rel="icon" href="<?= $base ?>img/favicon.ico" type="image/x-icon">
+    </head>
 <body>
 
 <div class="layout">
 
-    <!-- ── Sidebar ── -->
+    <!-- ══════════════════════════════
+         SIDEBAR
+    ══════════════════════════════ -->
     <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigation principale">
 
+        <!-- Identité -->
         <div class="sidebar-identity">
             <div class="avatar-wrap">
                 <img src="<?= $base ?>img/Photo.png"
@@ -36,6 +39,7 @@ $base = str_repeat('../', $depth ?? 0);
             </div>
         </div>
 
+        <!-- Navigation -->
         <nav class="sidebar-nav">
 
             <p class="nav-section-label">// Navigation</p>
@@ -87,47 +91,37 @@ $base = str_repeat('../', $depth ?? 0);
 
         </nav>
 
+        <!-- Footer sidebar -->
         <div class="sidebar-footer">
             <div class="sidebar-socials">
-                <a class="social-btn" href="https://www.linkedin.com/in/adriano-ferreira-da-silva-382138339/"
+                <a class="social-btn"
+                   href="https://www.linkedin.com/in/adriano-ferreira-da-silva-382138339/"
                    target="_blank" rel="noopener" title="LinkedIn">in</a>
-                <a class="social-btn" href="https://github.com/Adriano74f"
+                <a class="social-btn"
+                   href="https://github.com/Adriano74f"
                    target="_blank" rel="noopener" title="GitHub">gh</a>
-                <a class="social-btn" href="<?= $base ?>img/Ferreira-Da-Silva-Adriano-CV.pdf"
-                   target="_blank" title="CV">cv</a>
+                <a class="social-btn"
+                   href="<?= $base ?>img/Ferreira-Da-Silva-Adriano-CV.pdf"
+                   target="_blank" title="Télécharger le CV">cv</a>
             </div>
         </div>
 
     </aside>
 
-    <!-- Overlay mobile -->
+    <!-- Overlay sombre mobile (clic pour fermer la sidebar) -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- ── Main ── -->
+    <!-- ══════════════════════════════
+         CONTENU PRINCIPAL
+    ══════════════════════════════ -->
     <div class="main-content">
 
-        <!-- Topbar mobile -->
+        <!-- Topbar mobile uniquement -->
         <div class="topbar">
             <span class="topbar-brand">Adriano F.D.S.</span>
-            <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+            <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         </div>
 
-        <?php
-        // JS inline pour le menu mobile — exécuté après chargement
-        ?>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const btn     = document.getElementById('menuBtn');
-                const sidebar = document.getElementById('sidebar');
-                const overlay = document.getElementById('sidebarOverlay');
-
-                if (btn && sidebar && overlay) {
-                    btn.addEventListener('click', function () {
-                        sidebar.classList.toggle('open');
-                    });
-                    overlay.addEventListener('click', function () {
-                        sidebar.classList.remove('open');
-                    });
-                }
-            });
-        </script>
+<?php
+// NB : les divs .main-content et .layout sont fermés dans footer.php
+?>
