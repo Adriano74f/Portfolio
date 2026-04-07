@@ -28,17 +28,14 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
 
             <p class="muted">
-                La cybersécurité est devenue un enjeu majeur pour toutes les organisations, qu'elles soient
-                publiques ou privées. Durant mes deux années de BTS SIO, j'ai suivi de près les évolutions
-                des menaces informatiques : ransomwares, attaques Man-In-The-Middle, phishing ciblé ou encore
-                vulnérabilités dans les infrastructures réseau. Mes stages à la Mairie de Ville-la-Grand et
-                chez OCI Informatique m'ont permis de confronter ces connaissances théoriques à des situations
-                réelles : mise en place de VPN, configuration de pare-feu, sensibilisation des utilisateurs
-                et bonnes pratiques Active Directory. Cette veille nourrit directement mon projet de poursuivre
-                vers un Bachelor en cybersécurité.
+                La cybersécurité est devenue un enjeu majeur pour toutes les organisations. Durant mes deux
+                années de BTS SIO, j'ai suivi de près les évolutions des menaces informatiques : ransomwares,
+                attaques Man-In-The-Middle, phishing ciblé ou encore vulnérabilités réseau. Mes stages à la
+                Mairie de Ville-la-Grand et chez OCI Informatique m'ont permis de confronter ces connaissances
+                à des situations réelles : VPN, pare-feux, GPO sécurisées, sensibilisation des utilisateurs.
             </p>
 
-            <div>
+            <div style="margin-top: 14px;">
                 <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); font-family:var(--font-display); font-weight:700; margin-bottom:8px;">
                     Outils de veille utilisés
                 </p>
@@ -48,13 +45,13 @@ require_once __DIR__ . '/../includes/header.php';
                     <span class="tool-chip">LinkedIn — ANSSI</span>
                     <span class="tool-chip">LinkedIn — RISKINTEL</span>
                     <span class="tool-chip">Twitter/X — @ANSSI_FR</span>
-                    <span class="tool-chip">Twitter/X — Cybermalveillance</span>
+                    <span class="tool-chip">Twitter/X — @Cybermalveillance</span>
                     <span class="tool-chip">Google Actualités</span>
                 </div>
             </div>
         </div>
 
-        <!-- ── Sources de veille ── -->
+        <!-- ── Sources ── -->
         <div class="card">
             <div class="card-title"><span class="ct-icon">🌐</span>Mes sources de veille</div>
             <div class="veille-sources-grid">
@@ -64,8 +61,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="source-info">
                         <p class="source-name">YouTube</p>
                         <ul class="source-list">
-                            <li><a href="https://www.youtube.com/@micode" target="_blank" rel="noopener">Micode</a></li>
-                            <li><a href="https://www.youtube.com/@Techno" target="_blank" rel="noopener">Techno</a></li>
+                            <li><a href="https://www.youtube.com/@Micode" target="_blank" rel="noopener">Micode</a></li>
+                            <li><a href="https://www.youtube.com/@TechnoNerd" target="_blank" rel="noopener">Techno</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +72,7 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="source-info">
                         <p class="source-name">LinkedIn</p>
                         <ul class="source-list">
-                            <li><a href="https://www.linkedin.com/company/anssi/" target="_blank" rel="noopener">ANSSI</a></li>
+                            <li><a href="https://www.linkedin.com/company/anssi-fr/" target="_blank" rel="noopener">ANSSI</a></li>
                             <li><a href="https://www.linkedin.com/company/riskintel/" target="_blank" rel="noopener">RISKINTEL</a></li>
                         </ul>
                     </div>
@@ -87,7 +84,7 @@ require_once __DIR__ . '/../includes/header.php';
                         <p class="source-name">Twitter / X</p>
                         <ul class="source-list">
                             <li><a href="https://twitter.com/ANSSI_FR" target="_blank" rel="noopener">@ANSSI_FR</a></li>
-                            <li><a href="https://twitter.com/cybermalveillance" target="_blank" rel="noopener">@Cybermalveillance</a></li>
+                            <li><a href="https://twitter.com/Cybermalveillance" target="_blank" rel="noopener">@Cybermalveillance</a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,12 +95,11 @@ require_once __DIR__ . '/../includes/header.php';
                         <p class="source-name">Google Actualités</p>
                         <ul class="source-list">
                             <li>Alertes « cybersécurité »</li>
-                            <li>Alertes « ransomware »</li>
+                            <li>Alertes « ransomware France »</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Sources complémentaires recommandées -->
                 <div class="source-block">
                     <div class="source-logo source-extra">🔐</div>
                     <div class="source-info">
@@ -151,7 +147,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
         </div>
 
-        <!-- ── Articles / faits marquants ── -->
+        <!-- ── Articles ── -->
         <div class="card">
             <div class="card-title"><span class="ct-icon">📰</span>Faits marquants suivis</div>
             <div class="veille-articles">
@@ -162,7 +158,7 @@ require_once __DIR__ . '/../includes/header.php';
                         <p class="article-title">Attaque Man-In-The-Middle (MITM) — Démonstration et prévention</p>
                         <p class="article-meta">Veille personnelle + atelier BTS — 2024/2025</p>
                     </div>
-                    <span class="btn-sm" style="opacity:0.5;cursor:default;">Pratiqué ✔</span>
+                    <span class="btn-sm" style="opacity:.5;cursor:default;">Pratiqué ✔</span>
                 </div>
 
                 <div class="article-row">
@@ -171,13 +167,13 @@ require_once __DIR__ . '/../includes/header.php';
                         <p class="article-title">Recrudescence des ransomwares ciblant les collectivités locales en France</p>
                         <p class="article-meta">CERT-FR / ANSSI — 2024</p>
                     </div>
-                    <a class="btn-sm" href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">Lire →</a>
+                    <a class="btn-sm" href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2024-CTI-001/" target="_blank" rel="noopener">Lire →</a>
                 </div>
 
                 <div class="article-row">
                     <div class="article-num">03</div>
                     <div class="article-body">
-                        <p class="article-title">Bonne pratiques Active Directory : sécurisation des GPO et des comptes privilégiés</p>
+                        <p class="article-title">Bonnes pratiques Active Directory : sécurisation des GPO et comptes privilégiés</p>
                         <p class="article-meta">ANSSI — Guide d'hygiène informatique</p>
                     </div>
                     <a class="btn-sm" href="https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/" target="_blank" rel="noopener">Lire →</a>
@@ -198,7 +194,7 @@ require_once __DIR__ . '/../includes/header.php';
                         <p class="article-title">Authentification multi-facteurs (MFA) : pourquoi c'est devenu indispensable</p>
                         <p class="article-meta">The Hacker News — 2025</p>
                     </div>
-                    <a class="btn-sm" href="https://thehackernews.com/" target="_blank" rel="noopener">Lire →</a>
+                    <a class="btn-sm" href="https://thehackernews.com/search/label/Multi-Factor%20Authentication" target="_blank" rel="noopener">Lire →</a>
                 </div>
 
             </div>
