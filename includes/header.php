@@ -18,12 +18,8 @@ $base = str_repeat('../', $depth ?? 0);
 
 <div class="layout">
 
-    <!-- ══════════════════════════════
-         SIDEBAR
-    ══════════════════════════════ -->
     <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigation principale">
 
-        <!-- Identité -->
         <div class="sidebar-identity">
             <div class="avatar-wrap">
                 <img src="<?= $base ?>img/Photo.png"
@@ -39,7 +35,6 @@ $base = str_repeat('../', $depth ?? 0);
             </div>
         </div>
 
-        <!-- Navigation -->
         <nav class="sidebar-nav">
 
             <p class="nav-section-label">// Navigation</p>
@@ -47,11 +42,6 @@ $base = str_repeat('../', $depth ?? 0);
             <a href="<?= $base ?>index.php"
                class="nav-link <?= ($currentPage === 'index') ? 'active' : '' ?>">
                 <span class="nav-icon">🏠</span> Présentation
-            </a>
-
-            <a href="<?= $base ?>pages/bts.php"
-               class="nav-link <?= ($currentPage === 'bts') ? 'active' : '' ?>">
-                <span class="nav-icon">🎓</span> BTS SIO — SLAM
             </a>
 
             <a href="<?= $base ?>pages/competences.php"
@@ -67,11 +57,6 @@ $base = str_repeat('../', $depth ?? 0);
             <a href="<?= $base ?>pages/stages.php"
                class="nav-link <?= ($currentPage === 'stages') ? 'active' : '' ?>">
                 <span class="nav-icon">🏢</span> Stages
-            </a>
-
-            <a href="<?= $base ?>pages/patrimoine.php"
-               class="nav-link <?= ($currentPage === 'patrimoine') ? 'active' : '' ?>">
-                <span class="nav-icon">🗄️</span> Patrimoine
             </a>
 
             <a href="<?= $base ?>pages/veille.php"
@@ -96,7 +81,6 @@ $base = str_repeat('../', $depth ?? 0);
 
         </nav>
 
-        <!-- Footer sidebar -->
         <div class="sidebar-footer">
             <div class="sidebar-socials">
                 <a class="social-btn"
@@ -107,24 +91,19 @@ $base = str_repeat('../', $depth ?? 0);
                    target="_blank" rel="noopener" title="GitHub">gh</a>
                 <a class="social-btn"
                    href="<?= $base ?>img/Ferreira-Da-Silva-Adriano-CV.pdf"
-                   target="_blank" title="Télécharger le CV">cv</a>
+                   target="_blank" title="CV">cv</a>
             </div>
         </div>
 
     </aside>
 
-    <!-- Overlay mobile -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- ══════════════════════════════
-         CONTENU PRINCIPAL
-    ══════════════════════════════ -->
     <div class="main-content">
 
-        <!-- Topbar mobile uniquement -->
         <div class="topbar">
             <span class="topbar-brand">Adriano F.D.S.</span>
             <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         </div>
 
-<?php /* Les divs .main-content et .layout sont fermés dans footer.php */ ?>
+<?php /* .main-content et .layout fermés dans footer.php */ ?>

@@ -1400,14 +1400,17 @@ body::after {
 
 ::selection { background: rgba(0,255,231,.18); color: var(--text); }
 
+
 /* ═══════════════════════════════════════════════════════════════════
    PAGE CONTACT
 ═══════════════════════════════════════════════════════════════════ */
 
-/* Grille 2 colonnes : infos | formulaire */
+/* Reset liens globaux — évite le bleu navigateur */
+a { color: inherit; text-decoration: none; }
+
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 20px;
     align-items: start;
 }
@@ -1429,25 +1432,19 @@ body::after {
     font-size: .78rem;
     letter-spacing: .03em;
 }
-
 .contact-alert--success {
     background: rgba(0,255,231,.06);
     border: 1px solid rgba(0,255,231,.3);
     color: var(--c1);
 }
-
 .contact-alert--error {
     background: rgba(255,60,110,.06);
     border: 1px solid rgba(255,60,110,.3);
     color: var(--c3);
 }
+.alert-icon { font-size: 1rem; flex-shrink: 0; }
 
-.alert-icon {
-    font-size: 1rem;
-    flex-shrink: 0;
-}
-
-/* ── Items de contact ── */
+/* ── Blocs coordonnées ── */
 .contact-items {
     display: flex;
     flex-direction: column;
@@ -1463,41 +1460,44 @@ body::after {
     background: var(--panel2);
     border: 1px solid var(--border);
     text-decoration: none;
-    transition: all .18s;
+    color: var(--text);          /* ← force la couleur, plus de bleu */
+    transition: border-color .18s, transform .18s, background .18s;
     cursor: none;
 }
 
 .contact-item:hover {
-    border-color: rgba(0,255,231,.25);
+    border-color: rgba(0,255,231,.28);
     background: rgba(0,255,231,.04);
     transform: translateX(3px);
+    color: var(--text);
 }
 
+/* Icône ronde */
 .ci-icon-wrap {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .8rem;
+    font-size: .82rem;
     font-weight: 700;
     font-family: var(--font-mono);
     flex-shrink: 0;
     border: 1px solid var(--border);
 }
 
-.ci-mail    { background: rgba(0,255,231,.08);  border-color: rgba(0,255,231,.2);  color: var(--c1); }
-.ci-phone   { background: rgba(0,136,255,.08);  border-color: rgba(0,136,255,.2);  color: var(--c2); }
-.ci-linkedin{ background: rgba(10,102,194,.15); border-color: rgba(10,102,194,.3); color: #4db8ff; font-family: serif; font-size: .9rem; }
-.ci-github  { background: rgba(167,139,250,.08);border-color: rgba(167,139,250,.2);color: var(--c5); font-size: 1rem; }
-.ci-cv      { background: rgba(255,225,0,.08);  border-color: rgba(255,225,0,.2);  color: var(--c4); font-size: .65rem; font-family: var(--font-mono); }
+.ci-mail     { background: rgba(0,255,231,.08);   border-color: rgba(0,255,231,.22);   color: var(--c1); }
+.ci-phone    { background: rgba(0,136,255,.08);   border-color: rgba(0,136,255,.22);   color: var(--c2); }
+.ci-linkedin { background: rgba(10,102,194,.12);  border-color: rgba(10,102,194,.28);  color: #4db8ff; font-family: serif; font-size: .95rem; }
+.ci-github   { background: rgba(167,139,250,.08); border-color: rgba(167,139,250,.22); color: var(--c5); font-size: 1rem; }
+.ci-cv       { background: rgba(255,225,0,.08);   border-color: rgba(255,225,0,.22);   color: var(--c4); font-size: .62rem; font-family: var(--font-mono); }
 
-.ci-body { flex: 1; }
+.ci-body { flex: 1; min-width: 0; }
 
 .ci-label {
     font-family: var(--font-mono);
-    font-size: .55rem;
+    font-size: .54rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     color: var(--muted);
@@ -1509,6 +1509,9 @@ body::after {
     color: var(--text);
     font-family: var(--font-display);
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ci-arrow {
@@ -1518,7 +1521,6 @@ body::after {
     flex-shrink: 0;
     transition: color .15s, transform .15s;
 }
-
 .contact-item:hover .ci-arrow {
     color: var(--c1);
     transform: translateX(2px);
@@ -1533,6 +1535,7 @@ body::after {
     background: rgba(0,255,231,.04);
     border: 1px solid rgba(0,255,231,.15);
     border-radius: var(--radius);
+    margin-bottom: 12px;
 }
 
 .avail-dot {
@@ -1556,7 +1559,7 @@ body::after {
 
 .avail-sub {
     font-family: var(--font-mono);
-    font-size: .62rem;
+    font-size: .6rem;
     color: var(--text2);
     margin-top: 2px;
 }
@@ -1584,7 +1587,7 @@ body::after {
 
 .form-group label {
     font-family: var(--font-mono);
-    font-size: .62rem;
+    font-size: .6rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     color: var(--text2);
@@ -1599,30 +1602,32 @@ body::after {
     border-radius: var(--radius);
     color: var(--text);
     font-family: var(--font-body);
-    font-size: .83rem;
+    font-size: .84rem;
     padding: 10px 13px;
     outline: none;
-    transition: border-color .18s, box-shadow .18s;
+    transition: border-color .18s, box-shadow .18s, background .18s;
     width: 100%;
     resize: vertical;
-    cursor: none;
+    cursor: text;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--muted);
     font-family: var(--font-mono);
-    font-size: .72rem;
+    font-size: .7rem;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: rgba(0,255,231,.4);
-    box-shadow: 0 0 0 2px rgba(0,255,231,.06), 0 0 12px rgba(0,255,231,.08);
+    box-shadow: 0 0 0 2px rgba(0,255,231,.07), 0 0 14px rgba(0,255,231,.07);
     background: rgba(0,255,231,.02);
 }
 
-.form-group textarea { min-height: 130px; }
+.form-group textarea { min-height: 140px; }
 
 .form-footer {
     display: flex;
@@ -1630,19 +1635,19 @@ body::after {
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: 4px;
+    padding-top: 4px;
 }
 
 .form-note {
     font-family: var(--font-mono);
-    font-size: .6rem;
+    font-size: .58rem;
     color: var(--muted);
     letter-spacing: .04em;
 }
 
-/* ── Responsive contact ── */
-@media (max-width: 768px) {
-    .contact-grid { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .form-footer { flex-direction: column; align-items: flex-start; }
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .contact-grid  { grid-template-columns: 1fr; }
+    .form-row      { grid-template-columns: 1fr; }
+    .form-footer   { flex-direction: column; align-items: flex-start; }
 }

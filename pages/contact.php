@@ -1,6 +1,6 @@
 <?php
 /**
- * pages/contact.php — Page de contact
+ * pages/contact.php
  */
 session_start();
 
@@ -11,10 +11,8 @@ $prevEmail   = $_SESSION['form_email']   ?? '';
 $prevMsg     = $_SESSION['form_msg']     ?? '';
 
 unset(
-        $_SESSION['form_success'],
-        $_SESSION['form_error'],
-        $_SESSION['form_nom'],
-        $_SESSION['form_email'],
+        $_SESSION['form_success'], $_SESSION['form_error'],
+        $_SESSION['form_nom'],     $_SESSION['form_email'],
         $_SESSION['form_msg']
 );
 
@@ -32,7 +30,6 @@ require_once __DIR__ . '/../includes/header.php';
             <p>Disponible pour alternance, stage ou échange professionnel</p>
         </div>
 
-        <!-- Messages flash -->
         <?php if ($formSuccess): ?>
             <div class="contact-alert contact-alert--success" role="alert">
                 <span class="alert-icon">✔</span>
@@ -45,16 +42,14 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
         <?php endif; ?>
 
-        <!-- Grille principale -->
         <div class="contact-grid">
 
-            <!-- Colonne gauche : infos -->
+            <!-- ── Colonne gauche ── -->
             <div class="contact-left">
 
-                <!-- Carte identité -->
+                <!-- Coordonnées -->
                 <div class="card">
                     <div class="card-title"><span class="ct-icon">📡</span>Coordonnées</div>
-
                     <div class="contact-items">
 
                         <a class="contact-item" href="mailto:adriano.ferreiradasilva74@gmail.com">
@@ -111,16 +106,16 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
 
                 <!-- Disponibilité -->
-                <div class="card" style="margin-top: 0;">
+                <div class="card">
                     <div class="card-title"><span class="ct-icon">🟢</span>Disponibilité</div>
                     <div class="availability-block">
                         <div class="avail-dot"></div>
                         <div>
                             <p class="avail-title">Disponible</p>
-                            <p class="avail-sub">Recherche alternance / stage en cybersécurité — Rentrée 2026</p>
+                            <p class="avail-sub">Recherche alternance / stage — Cybersécurité — Rentrée 2026</p>
                         </div>
                     </div>
-                    <div class="info-grid" style="margin-top: 12px;">
+                    <div class="info-grid">
                         <div class="info-block">
                             <div class="ib-label">Localisation</div>
                             <p class="ib-value">Annecy — Haute-Savoie</p>
@@ -134,7 +129,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             </div>
 
-            <!-- Colonne droite : formulaire -->
+            <!-- ── Colonne droite : formulaire ── -->
             <div class="card contact-form-card">
                 <div class="card-title"><span class="ct-icon">✏️</span>Envoyer un message</div>
 
@@ -147,48 +142,30 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nom">Nom complet <span class="form-required">*</span></label>
-                            <input
-                                    type="text"
-                                    id="nom"
-                                    name="nom"
-                                    required
-                                    placeholder="Prénom NOM"
-                                    value="<?= htmlspecialchars($prevNom) ?>"
-                                    autocomplete="name"
-                            />
+                            <input type="text" id="nom" name="nom" required
+                                   placeholder="Prénom NOM"
+                                   value="<?= htmlspecialchars($prevNom) ?>"
+                                   autocomplete="name" />
                         </div>
                         <div class="form-group">
                             <label for="email">Adresse e-mail <span class="form-required">*</span></label>
-                            <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    placeholder="exemple@mail.com"
-                                    value="<?= htmlspecialchars($prevEmail) ?>"
-                                    autocomplete="email"
-                            />
+                            <input type="email" id="email" name="email" required
+                                   placeholder="exemple@mail.com"
+                                   value="<?= htmlspecialchars($prevEmail) ?>"
+                                   autocomplete="email" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="sujet">Sujet</label>
-                        <input
-                                type="text"
-                                id="sujet"
-                                name="sujet"
-                                placeholder="Alternance, stage, projet..."
-                        />
+                        <input type="text" id="sujet" name="sujet"
+                               placeholder="Alternance, stage, projet collaboratif..." />
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message <span class="form-required">*</span></label>
-                        <textarea
-                                id="message"
-                                name="message"
-                                required
-                                rows="6"
-                                placeholder="Bonjour Adriano, je vous contacte au sujet de..."
+                        <textarea id="message" name="message" required
+                                  placeholder="Bonjour Adriano, je vous contacte au sujet de..."
                         ><?= htmlspecialchars($prevMsg) ?></textarea>
                     </div>
 
