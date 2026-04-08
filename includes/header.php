@@ -49,6 +49,11 @@ $base = str_repeat('../', $depth ?? 0);
                 <span class="nav-icon">🏠</span> Présentation
             </a>
 
+            <a href="<?= $base ?>pages/bts.php"
+               class="nav-link <?= ($currentPage === 'bts') ? 'active' : '' ?>">
+                <span class="nav-icon">🎓</span> BTS SIO — SLAM
+            </a>
+
             <a href="<?= $base ?>pages/competences.php"
                class="nav-link <?= ($currentPage === 'competences') ? 'active' : '' ?>">
                 <span class="nav-icon">⚡</span> Compétences
@@ -64,6 +69,11 @@ $base = str_repeat('../', $depth ?? 0);
                 <span class="nav-icon">🏢</span> Stages
             </a>
 
+            <a href="<?= $base ?>pages/patrimoine.php"
+               class="nav-link <?= ($currentPage === 'patrimoine') ? 'active' : '' ?>">
+                <span class="nav-icon">🗄️</span> Patrimoine
+            </a>
+
             <a href="<?= $base ?>pages/veille.php"
                class="nav-link <?= ($currentPage === 'veille') ? 'active' : '' ?>">
                 <span class="nav-icon">📡</span> Veille
@@ -77,6 +87,11 @@ $base = str_repeat('../', $depth ?? 0);
             <a href="<?= $base ?>pages/avenir.php"
                class="nav-link <?= ($currentPage === 'avenir') ? 'active' : '' ?>">
                 <span class="nav-icon">🎯</span> Projet pro
+            </a>
+
+            <a href="<?= $base ?>pages/contact.php"
+               class="nav-link <?= ($currentPage === 'contact') ? 'active' : '' ?>">
+                <span class="nav-icon">✉️</span> Contact
             </a>
 
         </nav>
@@ -98,7 +113,7 @@ $base = str_repeat('../', $depth ?? 0);
 
     </aside>
 
-    <!-- Overlay sombre mobile (clic pour fermer la sidebar) -->
+    <!-- Overlay mobile -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- ══════════════════════════════
@@ -112,6 +127,4 @@ $base = str_repeat('../', $depth ?? 0);
             <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         </div>
 
-<?php
-// NB : les divs .main-content et .layout sont fermés dans footer.php
-?>
+<?php /* Les divs .main-content et .layout sont fermés dans footer.php */ ?>
