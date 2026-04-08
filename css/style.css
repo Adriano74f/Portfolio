@@ -240,6 +240,7 @@ body::after {
     height: 82px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 15%;
     display: block;
     position: relative;
     z-index: 2;
@@ -703,6 +704,7 @@ body::after {
     height: 120px;
     border-radius: 4px;
     object-fit: cover;
+    object-position: center 15%;
     display: block;
     position: relative;
     z-index: 1;
