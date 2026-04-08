@@ -1,6 +1,6 @@
 <?php
 /**
- * pages/certifications.php — Certifications & Épreuve orale
+ * pages/certifications.php — Certifications
  */
 $pageTitle   = 'Certifications';
 $currentPage = 'certifications';
@@ -12,86 +12,218 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="page-header">
             <div class="page-icon">🏅</div>
-            <h1>Certifications</h1>
-            <p>Épreuve orale de certification — BTS SIO · Préparation &amp; résultats</p>
+            <h1 data-text="Certifications">Certifications</h1>
+            <p>Compétences validées · Développement &amp; Cybersécurité</p>
         </div>
 
-        <!-- ── Déroulement de l'épreuve ── -->
+        <!-- ── Pourquoi se certifier ── -->
         <div class="card">
-            <div class="card-title"><span class="ct-icon">🎙️</span>Déroulement de l'épreuve orale</div>
+            <div class="card-title"><span class="ct-icon">🎯</span>Pourquoi se certifier dans nos métiers ?</div>
 
-            <div class="oral-box">
-                <div class="oral-phase">
-                    <div class="oral-phase-label">Phase 1</div>
-                    <div class="oral-phase-title">Exposé — 10 min max</div>
-                    <p class="oral-phase-sub">
-                        Présentation à l'aide des supports de mon choix : mon besoin en compétences complémentaires,
-                        ma démarche d'acquisition, la ou les certifications passées et leurs apports dans mon
-                        parcours de professionnalisation.
-                    </p>
-                </div>
-                <div class="oral-phase">
-                    <div class="oral-phase-label">Phase 2</div>
-                    <div class="oral-phase-title">Entretien — 10 min max</div>
-                    <p class="oral-phase-sub">
-                        Questions de la commission sur la démarche, les choix de certifications,
-                        les résultats obtenus et le lien avec le projet professionnel.
-                    </p>
-                </div>
-            </div>
-        </div>
+            <p class="muted">
+                Dans les métiers du développement et de la cybersécurité, les technologies évoluent
+                en permanence. Une certification n'est pas qu'un diplôme de plus — c'est une preuve
+                concrète, vérifiable et reconnue par les recruteurs, que l'on maîtrise une technologie
+                ou un domaine précis à un niveau donné.
+            </p>
+            <p class="muted" style="margin-top: 10px;">
+                Contrairement à un cours en ligne classique, une certification implique une évaluation
+                réelle : examen, projet pratique, ou badge numérique vérifié. Elle démontre une démarche
+                proactive d'apprentissage, une capacité à se former en autonomie, et une volonté de rester
+                à jour dans un secteur qui ne tolère pas le statu quo.
+            </p>
 
-        <!-- ── Critères d'évaluation ── -->
-        <div class="card">
-            <div class="card-title"><span class="ct-icon">📋</span>Critères d'évaluation de la commission</div>
-            <div class="eval-grid">
+            <div class="patri-grid" style="margin-top: 18px;">
 
-                <div class="eval-block">
-                    <h4>🎯 Pertinence des besoins</h4>
+                <div class="patri-block">
+                    <div class="patri-icon">💼</div>
+                    <h3>Valeur sur le marché</h3>
                     <p>
-                        La commission évalue la pertinence des besoins exprimés pour étayer mon parcours
-                        de professionnalisation vers la cybersécurité.
+                        Les recruteurs en IT cherchent des profils certifiés. Une certification comme
+                        CompTIA Security+ ou AWS Associate est souvent exigée ou valorisée dans les
+                        offres d'emploi en cybersécurité et en développement cloud.
                     </p>
                 </div>
 
-                <div class="eval-block">
-                    <h4>🗺️ Connaissance de l'offre</h4>
+                <div class="patri-block">
+                    <div class="patri-icon">🧠</div>
+                    <h3>Compétences vérifiées</h3>
                     <p>
-                        Démontrer que j'ai exploré et compris l'offre de certifications disponibles dans
-                        mon domaine de spécialisation.
+                        Se certifier oblige à structurer ses connaissances, combler ses lacunes et
+                        prouver sa maîtrise. C'est un processus d'apprentissage bien plus rigoureux
+                        qu'un simple tutoriel en ligne.
                     </p>
                 </div>
 
-                <div class="eval-block">
-                    <h4>🔗 Adéquation avec le projet pro</h4>
+                <div class="patri-block">
+                    <div class="patri-icon">🚀</div>
+                    <h3>Accélérateur de carrière</h3>
                     <p>
-                        Montrer que les certifications choisies sont cohérentes avec mon projet professionnel :
-                        Bachelor Cybersécurité puis métiers de la sécurité informatique.
+                        Pour un futur professionnel de la cybersécurité, les certifications permettent
+                        d'accéder à des postes plus rapidement, de négocier un meilleur salaire,
+                        et de crédibiliser son profil face à des candidats plus expérimentés.
                     </p>
                 </div>
 
-                <div class="eval-block">
-                    <h4>📚 Démarche de préparation</h4>
+                <div class="patri-block">
+                    <div class="patri-icon">🔄</div>
+                    <h3>Formation continue</h3>
                     <p>
-                        Expliquer comment j'ai préparé chaque certification : plateformes utilisées,
-                        temps investi, ressources mobilisées.
-                    </p>
-                </div>
-
-                <div class="eval-block">
-                    <h4>✅ Résultats obtenus</h4>
-                    <p>
-                        Présenter les résultats concrets : badges obtenus, scores, compétences validées
-                        et apports dans ma montée en compétences.
+                        Dans un domaine où une faille zero-day peut émerger n'importe quel jour,
+                        se certifier régulièrement est une nécessité professionnelle, pas une option.
+                        C'est une habitude que je construis dès maintenant.
                     </p>
                 </div>
 
             </div>
+        </div>
+
+        <!-- ── Offre de certifications disponibles ── -->
+        <div class="card">
+            <div class="card-title"><span class="ct-icon">🌐</span>L'offre de certifications — Développement &amp; Cybersécurité</div>
+
+            <p class="muted" style="margin-bottom: 20px;">
+                Tour d'horizon des certifications les plus reconnues dans mes deux domaines de prédilection,
+                avec leurs caractéristiques et leur coût.
+            </p>
+
+            <!-- Développement -->
+            <h3 style="font-family: var(--font-display); font-size: .82rem; font-weight: 700; color: var(--c2); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px;">
+                &lt;/&gt; Certifications Développement
+            </h3>
+
+            <table class="skills-table" style="margin-bottom: 28px;">
+                <thead>
+                <tr>
+                    <th>Certification</th>
+                    <th>Organisme</th>
+                    <th>Domaine</th>
+                    <th>Prix</th>
+                    <th>Lien</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>JavaScript Algorithms &amp; Data Structures</td>
+                    <td class="muted">freeCodeCamp</td>
+                    <td class="muted">JavaScript / Algo</td>
+                    <td class="muted" style="color: var(--c1);">Gratuit</td>
+                    <td><a class="btn-sm" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Responsive Web Design</td>
+                    <td class="muted">freeCodeCamp</td>
+                    <td class="muted">HTML / CSS</td>
+                    <td class="muted" style="color: var(--c1);">Gratuit</td>
+                    <td><a class="btn-sm" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>PHP &amp; MySQL — Certification développeur web</td>
+                    <td class="muted">OpenClassrooms</td>
+                    <td class="muted">PHP / Back-end</td>
+                    <td class="muted" style="color: var(--c4);">~29 €/mois</td>
+                    <td><a class="btn-sm" href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Oracle Java SE — Associate (OCA)</td>
+                    <td class="muted">Oracle</td>
+                    <td class="muted">Java</td>
+                    <td class="muted" style="color: var(--c4);">~245 €</td>
+                    <td><a class="btn-sm" href="https://education.oracle.com/java-se-17-developer/pexam_1Z0-829" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Microsoft Certified: Azure Developer Associate</td>
+                    <td class="muted">Microsoft</td>
+                    <td class="muted">Cloud / Dev</td>
+                    <td class="muted" style="color: var(--c4);">~165 €</td>
+                    <td><a class="btn-sm" href="https://learn.microsoft.com/fr-fr/certifications/azure-developer/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub Foundations</td>
+                    <td class="muted">GitHub</td>
+                    <td class="muted">Git / DevOps</td>
+                    <td class="muted" style="color: var(--c4);">~99 $</td>
+                    <td><a class="btn-sm" href="https://resources.github.com/learn/certifications/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Cybersécurité -->
+            <h3 style="font-family: var(--font-display); font-size: .82rem; font-weight: 700; color: var(--c1); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px;">
+                🔐 Certifications Cybersécurité
+            </h3>
+
+            <table class="skills-table">
+                <thead>
+                <tr>
+                    <th>Certification</th>
+                    <th>Organisme</th>
+                    <th>Domaine</th>
+                    <th>Prix</th>
+                    <th>Lien</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>SecNumAcadémie</td>
+                    <td class="muted">ANSSI</td>
+                    <td class="muted">Cybersécurité générale</td>
+                    <td class="muted" style="color: var(--c1);">Gratuit</td>
+                    <td><a class="btn-sm" href="https://secnumacademie.gouv.fr/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity Essentials</td>
+                    <td class="muted">Cisco NetAcad</td>
+                    <td class="muted">Fondamentaux sécu</td>
+                    <td class="muted" style="color: var(--c1);">Gratuit</td>
+                    <td><a class="btn-sm" href="https://www.netacad.com/courses/cybersecurity-essentials" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Google Cybersecurity Certificate</td>
+                    <td class="muted">Google / Coursera</td>
+                    <td class="muted">Cybersécurité pro</td>
+                    <td class="muted" style="color: var(--c4);">~49 €/mois</td>
+                    <td><a class="btn-sm" href="https://grow.google/certificates/cybersecurity/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>CompTIA Security+</td>
+                    <td class="muted">CompTIA</td>
+                    <td class="muted">Sécurité réseau &amp; systèmes</td>
+                    <td class="muted" style="color: var(--c3);">~390 €</td>
+                    <td><a class="btn-sm" href="https://www.comptia.org/certifications/security" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>Certified Ethical Hacker (CEH)</td>
+                    <td class="muted">EC-Council</td>
+                    <td class="muted">Pentest / Ethical Hacking</td>
+                    <td class="muted" style="color: var(--c3);">~950 €</td>
+                    <td><a class="btn-sm" href="https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>TryHackMe — Learning Paths</td>
+                    <td class="muted">TryHackMe</td>
+                    <td class="muted">Pratique / CTF</td>
+                    <td class="muted" style="color: var(--c4);">~14 $/mois</td>
+                    <td><a class="btn-sm" href="https://tryhackme.com/paths" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                <tr>
+                    <td>eJPT — Junior Penetration Tester</td>
+                    <td class="muted">eLearnSecurity</td>
+                    <td class="muted">Pentest débutant</td>
+                    <td class="muted" style="color: var(--c4);">~200 $</td>
+                    <td><a class="btn-sm" href="https://ine.com/certifications/ejpt-certification" target="_blank" rel="noopener">Accéder →</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p class="muted" style="margin-top: 14px; font-size: .75rem; font-family: var(--font-mono);">
+                ⚡ Prix indicatifs — susceptibles de varier. Beaucoup de plateformes proposent des réductions étudiantes.
+            </p>
         </div>
 
         <!-- ── Mes certifications obtenues ── -->
         <div class="card">
-            <div class="card-title"><span class="ct-icon">🏆</span>Certifications obtenues</div>
+            <div class="card-title"><span class="ct-icon">🏆</span>Mes certifications obtenues</div>
             <div class="cert-grid">
 
                 <!-- JS -->
@@ -148,7 +280,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
-                <!-- Credly placeholder -->
+                <!-- Credly -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🎖️</div>
                     <div>
@@ -166,7 +298,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
-                <!-- Certification à venir -->
+                <!-- SecNumAcadémie -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🔐</div>
                     <div>
@@ -176,7 +308,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                     <p class="cert-desc">
                         Mooc cybersécurité de référence en France : sécurité des réseaux, authentification,
-                        cryptographie et gestion des risques. Complémentaire à mon projet de Bachelor.
+                        cryptographie et gestion des risques.
                     </p>
                     <span class="cert-status in-progress">⏳ En cours</span>
                     <div class="project-links">
@@ -186,51 +318,9 @@ require_once __DIR__ . '/../includes/header.php';
 
             </div>
 
-            <p class="muted" style="margin-top:16px; font-size:0.75rem;">
-                💡 Cette page sera mise à jour au fur et à mesure de l'obtention de nouvelles certifications
-                avant l'oral de certification.
+            <p class="muted" style="margin-top: 16px; font-size: .73rem; font-family: var(--font-mono);">
+                ⚡ Page mise à jour régulièrement au fur et à mesure de l'obtention de nouvelles certifications.
             </p>
-        </div>
-
-        <!-- ── Mon discours oral ── -->
-        <div class="card">
-            <div class="card-title"><span class="ct-icon">🗣️</span>Ma démarche — Points clés pour l'exposé</div>
-            <div class="eval-grid">
-
-                <div class="eval-block" style="border-left-color: var(--accent2);">
-                    <h4>1. Mon besoin identifié</h4>
-                    <p>
-                        Renforcer mes compétences en cybersécurité pour préparer mon entrée en Bachelor
-                        et me démarquer sur le marché du travail. Les certifications complètent ma formation
-                        BTS orientée développement.
-                    </p>
-                </div>
-
-                <div class="eval-block" style="border-left-color: var(--accent2);">
-                    <h4>2. Pourquoi ces certifications</h4>
-                    <p>
-                        OpenClassrooms pour les compétences techniques directement mobilisées en projet (JS, API REST, PHP).
-                        Credly pour des badges reconnus par les employeurs. SecNumAcadémie pour la spécialisation cybersécurité.
-                    </p>
-                </div>
-
-                <div class="eval-block" style="border-left-color: var(--accent2);">
-                    <h4>3. Ce que ça m'a apporté</h4>
-                    <p>
-                        Application directe : l'API REST a nourri WeatherQuest, JS a enrichi mon portfolio,
-                        Symfony m'a appris à tester mes applications. Chaque certification est liée à un projet concret.
-                    </p>
-                </div>
-
-                <div class="eval-block" style="border-left-color: var(--accent2);">
-                    <h4>4. Lien avec mon projet pro</h4>
-                    <p>
-                        Ces certifications construisent un profil polyvalent développeur / sécurité, cohérent
-                        avec l'entrée en Bachelor Cybersécurité et le métier d'analyste ou ingénieur sécurité visé.
-                    </p>
-                </div>
-
-            </div>
         </div>
 
     </main>
