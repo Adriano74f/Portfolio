@@ -49,11 +49,6 @@ $base = str_repeat('../', $depth ?? 0);
                 <span class="nav-icon">🏠</span> Présentation
             </a>
 
-            <a href="<?= $base ?>pages/bts.php"
-               class="nav-link <?= ($currentPage === 'bts') ? 'active' : '' ?>">
-                <span class="nav-icon">🎓</span> BTS SIO — SLAM
-            </a>
-
             <a href="<?= $base ?>pages/competences.php"
                class="nav-link <?= ($currentPage === 'competences') ? 'active' : '' ?>">
                 <span class="nav-icon">⚡</span> Compétences
