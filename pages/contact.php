@@ -246,7 +246,7 @@ require_once __DIR__ . '/../includes/header.php';
                             <div class="ci-icon-wrap ci-mail">✉</div>
                             <div class="ci-body">
                                 <p class="ci-label">Email</p>
-                                <p class="ci-value">adriano.ferreiradasilva74@gmail.com</p>
+                                <p class="ci-value">adrianoferreiradasilva74@gmail.com</p>
                             </div>
                             <span class="ci-arrow">→</span>
                         </a>
