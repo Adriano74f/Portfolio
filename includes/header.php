@@ -1,93 +1,109 @@
 <?php
 /**
  * includes/header.php
- * En-tête partagé entre toutes les pages (navbar + ouverture du <body>)
- *
- * Utilisation :
- *   $pageTitle   = "Titre de la page";  // Requis avant l'include
- *   $currentPage = "presentation";      // Clé de la page active
- *   require_once __DIR__ . '/../includes/header.php';
+ * $depth : 0 = racine (index.php), 1 = pages/
  */
-
-// Profondeur du fichier appelant par rapport à la racine
-// Les pages dans /pages/ ont depth=1, index.php depth=0
-$depth = $depth ?? 0;
-$root  = str_repeat('../', $depth);
+$base = str_repeat('../', $depth ?? 0);
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><?= htmlspecialchars($pageTitle ?? 'Portfolio') ?> — Adriano Ferreira Da Silva</title>
-  <meta name="description" content="Portfolio BTS SIO SLAM d'Adriano Ferreira Da Silva — Lycée Gabriel Fauré" />
-  <link rel="stylesheet" href="<?= $root ?>css/style.css" />
-</head>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?= htmlspecialchars($pageTitle ?? 'Portfolio') ?> — Adriano Ferreira Da Silva</title>
+        <link rel="stylesheet" href="<?= $base ?>css/style.css">
+        <link rel="icon" href="<?= $base ?>img/favicon.ico" type="image/x-icon">
+    </head>
 <body>
 
-<?php
-// Définition des onglets de navigation
-$navItems = [
-  'index'        => ['label' => 'Présentation', 'icon' => '👤', 'href' => $root . 'index.php'],
-  'bts'          => ['label' => 'BTS SIO',      'icon' => '🎓', 'href' => $root . 'pages/bts.php'],
-  'stages'       => ['label' => 'Stages',        'icon' => '🏢', 'href' => $root . 'pages/stages.php'],
-  'projets'      => ['label' => 'Projets',       'icon' => '💻', 'href' => $root . 'pages/projets.php'],
-  'veille'       => ['label' => 'Veille',        'icon' => '📡', 'href' => $root . 'pages/veille.php'],
-  'patrimoine'   => ['label' => 'Patrimoine',    'icon' => '🗄️', 'href' => $root . 'pages/patrimoine.php'],
-  'competences'  => ['label' => 'Compétences',   'icon' => '⚡', 'href' => $root . 'pages/competences.php'],
-  'contact'      => ['label' => 'Contact',       'icon' => '✉️', 'href' => $root . 'pages/contact.php'],
-];
-?>
+<div class="layout">
 
-<!-- ========================================================
-     NAVBAR
-     ======================================================== -->
-<header>
-  <nav class="navbar" aria-label="Navigation principale">
-    <div class="navbar-inner">
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigation principale">
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="<?= $root ?>index.php" aria-label="Accueil">
-        <div class="navbar-avatar">
-          <img src="<?= $root ?>img/Photo.jpg" alt="Adriano Ferreira Da Silva" />
+        <div class="sidebar-identity">
+            <div class="avatar-wrap">
+                <img src="<?= $base ?>img/Photo.png"
+                     alt="Photo de profil Adriano Ferreira Da Silva"
+                     onerror="this.style.display='none'">
+                <div class="avatar-ring"></div>
+            </div>
+            <p class="sidebar-name">Adriano<br>Ferreira Da Silva</p>
+            <p class="sidebar-role">BTS SIO · SLAM</p>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Disponible
+            </div>
         </div>
-        <div>
-          <span class="navbar-name">Adriano Ferreira Da Silva</span>
-          <span class="navbar-role">BTS SIO — SLAM</span>
-        </div>
-      </a>
 
-      <!-- Liens desktop -->
-      <ul class="navbar-links" role="list">
-        <?php foreach ($navItems as $key => $item): ?>
-          <li>
-            <a href="<?= htmlspecialchars($item['href']) ?>"
-               <?= ($currentPage ?? '') === $key ? 'class="active" aria-current="page"' : '' ?>>
-              <span class="nav-icon" aria-hidden="true"><?= $item['icon'] ?></span>
-              <?= htmlspecialchars($item['label']) ?>
+        <nav class="sidebar-nav">
+
+            <p class="nav-section-label">// Navigation</p>
+
+            <a href="<?= $base ?>index.php"
+               class="nav-link <?= ($currentPage === 'index') ? 'active' : '' ?>">
+                <span class="nav-icon">🏠</span> Présentation
             </a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
 
-      <!-- Bouton hamburger mobile -->
-      <button class="navbar-toggle"
-              id="navToggle"
-              aria-label="Ouvrir le menu"
-              aria-expanded="false"
-              aria-controls="navMobile">☰</button>
+            <a href="<?= $base ?>pages/competences.php"
+               class="nav-link <?= ($currentPage === 'competences') ? 'active' : '' ?>">
+                <span class="nav-icon">⚡</span> Compétences
+            </a>
 
-    </div>
-  </nav>
+            <a href="<?= $base ?>pages/projets.php"
+               class="nav-link <?= ($currentPage === 'projets') ? 'active' : '' ?>">
+                <span class="nav-icon">💻</span> Projets
+            </a>
 
-  <!-- Menu mobile -->
-  <div class="navbar-mobile" id="navMobile" role="dialog" aria-label="Menu mobile">
-    <?php foreach ($navItems as $key => $item): ?>
-      <a href="<?= htmlspecialchars($item['href']) ?>"
-         <?= ($currentPage ?? '') === $key ? 'class="active" aria-current="page"' : '' ?>>
-        <span aria-hidden="true"><?= $item['icon'] ?></span>
-        <?= htmlspecialchars($item['label']) ?>
-      </a>
-    <?php endforeach; ?>
-  </div>
-</header>
+            <a href="<?= $base ?>pages/stages.php"
+               class="nav-link <?= ($currentPage === 'stages') ? 'active' : '' ?>">
+                <span class="nav-icon">🏢</span> Stages
+            </a>
+
+            <a href="<?= $base ?>pages/veille.php"
+               class="nav-link <?= ($currentPage === 'veille') ? 'active' : '' ?>">
+                <span class="nav-icon">📡</span> Veille
+            </a>
+
+            <a href="<?= $base ?>pages/certifications.php"
+               class="nav-link <?= ($currentPage === 'certifications') ? 'active' : '' ?>">
+                <span class="nav-icon">🏅</span> Certifications
+            </a>
+
+            <a href="<?= $base ?>pages/avenir.php"
+               class="nav-link <?= ($currentPage === 'avenir') ? 'active' : '' ?>">
+                <span class="nav-icon">🎯</span> Projet pro
+            </a>
+
+            <a href="<?= $base ?>pages/contact.php"
+               class="nav-link <?= ($currentPage === 'contact') ? 'active' : '' ?>">
+                <span class="nav-icon">✉️</span> Contact
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-socials">
+                <a class="social-btn"
+                   href="https://www.linkedin.com/in/adriano-ferreira-da-silva-382138339/"
+                   target="_blank" rel="noopener" title="LinkedIn">in</a>
+                <a class="social-btn"
+                   href="https://github.com/Adriano74f"
+                   target="_blank" rel="noopener" title="GitHub">gh</a>
+                <a class="social-btn"
+                   href="<?= $base ?>img/Ferreira-Da-Silva-Adriano-CV.pdf"
+                   target="_blank" title="CV">cv</a>
+            </div>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-content">
+
+        <div class="topbar">
+            <span class="topbar-brand">Adriano F.D.S.</span>
+            <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+
+<?php /* .main-content et .layout fermés dans footer.php */ ?>

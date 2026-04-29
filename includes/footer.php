@@ -1,18 +1,21 @@
 <?php
 /**
  * includes/footer.php
- * Pied de page partagé — ferme le <body> et charge le JS
+ * Ferme .main-content et .layout ouverts dans header.php
  */
 ?>
 
-  <footer class="footer">
+<footer class="footer">
     <p>
-      © <?= date('Y') ?> Adriano Ferreira Da Silva —
-      Portfolio BTS SIO SLAM —
-      <a href="<?= $root ?? '' ?>pages/contact.php">Contact</a>
+        © <?= date('Y') ?> Adriano Ferreira Da Silva —
+        Portfolio BTS SIO SLAM —
+        <a href="<?= $base ?? '' ?>pages/contact.php">Contact</a>
     </p>
-  </footer>
+</footer>
 
-  <script src="<?= $root ?? '' ?>js/main.js"></script>
+</div><!-- /.main-content -->
+</div><!-- /.layout -->
+
+<script src="<?= $base ?? '' ?>js/main.js"></script>
 </body>
 </html>
