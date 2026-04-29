@@ -1151,6 +1151,8 @@ body::after {
 .stage-tasks { list-style: none; display: flex; flex-direction: column; gap: 4px; }
 .stage-tasks li { font-size: .75rem; color: var(--text2); padding-left: 14px; position: relative; line-height: 1.45; }
 .stage-tasks li::before { content: '▸'; position: absolute; left: 0; color: var(--c1); font-size: .7rem; }
+.stage-task-link { color: var(--text2); text-decoration: none; border-bottom: 1px dashed rgba(0,255,231,.35); transition: color .15s, border-color .15s; }
+.stage-task-link:hover { color: var(--c1); border-bottom-color: var(--c1); }
 
 /* ═══════════════════════════════════════════════════════════════════
    PROJECTS GRID
@@ -1271,8 +1273,9 @@ body::after {
 .vt-sub { font-family: var(--font-mono); font-size: .58rem; color: var(--text2); margin-top: 3px; }
 .tool-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .tool-chip { font-family: var(--font-mono); font-size: .58rem; padding: 3px 9px; border-radius: 2px; background: var(--panel2); border: 1px solid var(--border); color: var(--text2); text-transform: uppercase; }
-.veille-sources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 11px; }
-.source-block { display: flex; align-items: flex-start; gap: 11px; background: var(--panel2); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; transition: all .15s; }
+.veille-sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); gap: 11px; justify-items: start; }
+.source-block { display: flex; align-items: flex-start; gap: 11px; background: var(--panel2); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; transition: all .15s; width: 100%; box-sizing: border-box; }
+.source-info { flex: 1; min-width: 0; overflow: hidden; }
 .source-block:hover { border-color: var(--border2); transform: translateY(-1px); }
 .source-logo { width: 34px; height: 34px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: .9rem; flex-shrink: 0; }
 .source-yt    { background: #ff0000; color: #fff; }
@@ -1291,6 +1294,7 @@ body::after {
 .article-body { flex: 1; }
 .article-title { font-size: .8rem; font-weight: 600; color: var(--text); margin-bottom: 1px; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .03em; }
 .article-meta { font-family: var(--font-mono); font-size: .57rem; color: var(--muted); }
+.veille-section-label { font-family: var(--font-display); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--c1); padding: 6px 10px; margin-top: 4px; border-left: 2px solid var(--c1); }
 
 /* ═══════════════════════════════════════════════════════════════════
    PATRIMOINE / BTS / PATRI
@@ -1341,8 +1345,9 @@ body::after {
    TÂCHES
 ═══════════════════════════════════════════════════════════════════ */
 .tasks-list { display: flex; flex-direction: column; gap: 9px; }
-.task-item { background: var(--panel2); border: 1px solid var(--border); border-radius: var(--radius); padding: 13px 15px; display: flex; align-items: center; gap: 12px; transition: all .18s; }
+.task-item { background: var(--panel2); border: 1px solid var(--border); border-radius: var(--radius); padding: 13px 15px; display: flex; align-items: center; gap: 12px; transition: all .18s; scroll-margin-top: 80px; }
 .task-item:hover { border-color: rgba(0,255,231,.2); box-shadow: 0 0 12px rgba(0,255,231,.05); }
+.task-item:target { border-color: rgba(0,255,231,.6); box-shadow: 0 0 20px rgba(0,255,231,.12); background: rgba(0,255,231,.04); }
 .task-icon { font-size: 1.25rem; width: 36px; height: 36px; background: rgba(0,255,231,.05); border: 1px solid rgba(0,255,231,.12); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .task-content { flex: 1; }
 .task-title { font-weight: 700; font-size: .83rem; color: var(--text); margin-bottom: 2px; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .03em; }

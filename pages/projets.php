@@ -88,24 +88,25 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </article>
 
-                <!-- PPE — NoteProPratique -->
+                <!-- PPE — Conventio -->
                 <article class="project-card">
                     <div class="project-top">
-                        <h3>NoteProPratique</h3>
+                        <h3>Conventio</h3>
                         <span class="project-type-ppe">PPE · Application web</span>
                     </div>
                     <p class="project-desc">
-                        Application web de prise de notes professionnelle en PHP. Interface responsive,
-                        gestion des comptes utilisateurs et stockage en base de données MySQL.
+                        Application web collaborative de gestion de conventions de stage pour le lycée.
+                        Permet la création, le suivi et la validation numérique des conventions entre
+                        établissement, élèves et entreprises.
                     </p>
                     <div class="tech-tags">
                         <span class="tech-tag">PHP</span>
                         <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Gestion documentaire</span>
                     </div>
                     <div class="project-links">
-                        <a class="btn-sm" href="https://github.com/Adriano74f/NoteProPratique" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="btn-sm" href="https://github.com/ConventioLGF/Conventio" target="_blank" rel="noopener">GitHub →</a>
                     </div>
                 </article>
 
@@ -130,24 +131,25 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </article>
 
-                <!-- PPE — DiiageCustomerApp -->
+                <!-- PPE — Topscore -->
                 <article class="project-card">
                     <div class="project-top">
-                        <h3>DiiageCustomerApp</h3>
-                        <span class="project-type-ppe">PPE · C# / .NET</span>
+                        <h3>Topscore</h3>
+                        <span class="project-type-ppe">PPE · Application web</span>
                     </div>
                     <p class="project-desc">
-                        Application de gestion de clients en C# développée en collaboration.
-                        Interface WPF, opérations CRUD et connexion à une base de données relationnelle SQL.
+                        Application web de gestion et d'affichage de scores sportifs en temps réel.
+                        Classements dynamiques, gestion des équipes et des résultats de matchs,
+                        interface épurée orientée utilisateur.
                     </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">.NET</span>
-                        <span class="tech-tag">WPF</span>
-                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API REST</span>
                     </div>
                     <div class="project-links">
-                        <a class="btn-sm" href="https://github.com/Adriano74f/DiiageCustomerApp" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="btn-sm" href="https://github.com/Adriano74f/Topscore" target="_blank" rel="noopener">GitHub →</a>
                     </div>
                 </article>
 

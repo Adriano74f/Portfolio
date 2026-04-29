@@ -31,12 +31,12 @@ require_once __DIR__ . '/../includes/header.php';
                     <p class="stage-role">🎯 Technicien réseau</p>
                     <ul class="stage-tasks">
                         <li>Administration réseau et infrastructure informatique municipale</li>
-                        <li>Mise en place et configuration de VPN pour les agents</li>
-                        <li>Gestion des GPO (Group Policy Objects) et présentation aux équipes</li>
-                        <li>Création de comptes utilisateurs / groupes et gestion des droits</li>
+                        <li><a class="stage-task-link" href="competences.php#task-vpn">Mise en place et configuration de VPN pour les agents</a></li>
+                        <li><a class="stage-task-link" href="competences.php#task-gpo">Gestion des GPO (Group Policy Objects) et présentation aux équipes</a></li>
+                        <li><a class="stage-task-link" href="competences.php#task-script">Création de comptes utilisateurs / groupes et gestion des droits</a></li>
                         <li>Sécurisation de visiophones pour plusieurs écoles de la commune</li>
                         <li>Sensibilisation des utilisateurs à la cybersécurité</li>
-                        <li>Rédaction de documentations techniques et rapports hebdomadaires</li>
+                        <li><a class="stage-task-link" href="competences.php#task-glpi">Rédaction de documentations techniques et rapports hebdomadaires</a></li>
                     </ul>
                 </div>
 
@@ -54,7 +54,7 @@ require_once __DIR__ . '/../includes/header.php';
                         <li>Maintenance de sessions utilisateurs sous Windows</li>
                         <li>Mise en place de pare-feu Stormshield sur des postes</li>
                         <li>Configuration de boîtes mail avec licences Microsoft 365</li>
-                        <li>Réalisation d'une stratégie de groupe (GPO) pour la configuration de mails</li>
+                        <li><a class="stage-task-link" href="competences.php#task-gpo">Réalisation d'une stratégie de groupe (GPO) pour la configuration de mails</a></li>
                         <li>Mise à jour de contenu sur le site web de l'entreprise</li>
                     </ul>
                 </div>

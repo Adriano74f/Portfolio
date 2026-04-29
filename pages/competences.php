@@ -71,7 +71,7 @@ require_once __DIR__ . '/../includes/header.php';
 
             <div class="tasks-list">
 
-                <div class="task-item">
+                <div class="task-item" id="task-2fa">
                     <div class="task-icon">🛡️</div>
                     <div class="task-content">
                         <p class="task-title">Mise en place d'une authentification à double facteur (2FA)</p>
@@ -82,7 +82,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </a>
                 </div>
 
-                <div class="task-item">
+                <div class="task-item" id="task-glpi">
                     <div class="task-icon">🌐</div>
                     <div class="task-content">
                         <p class="task-title">Réalisation d'un nouveau GLPI sécurisé à la Mairie</p>
@@ -93,7 +93,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </a>
                 </div>
 
-                <div class="task-item">
+                <div class="task-item" id="task-vpn">
                     <div class="task-icon">🔒</div>
                     <div class="task-content">
                         <p class="task-title">Mise en place de VPN et formation utilisateurs</p>
@@ -104,7 +104,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </a>
                 </div>
 
-                <div class="task-item">
+                <div class="task-item" id="task-gpo">
                     <div class="task-icon">⚙️</div>
                     <div class="task-content">
                         <p class="task-title">Réalisation et présentation de GPO (Group Policy Objects)</p>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </a>
                 </div>
 
-                <div class="task-item">
+                <div class="task-item" id="task-kali">
                     <div class="task-icon">🕵️</div>
                     <div class="task-content">
                         <p class="task-title">Simulation de cyberattaques sur Kali Linux (MITM, SQL, DDoS)</p>
@@ -126,7 +126,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </a>
                 </div>
 
-                <div class="task-item">
+                <div class="task-item" id="task-script">
                     <div class="task-icon">📜</div>
                     <div class="task-content">
                         <p class="task-title">Script de création de comptes utilisateurs en masse</p>

@@ -64,14 +64,14 @@ $base = str_repeat('../', $depth ?? 0);
                 <span class="nav-icon">📡</span> Veille
             </a>
 
-            <a href="<?= $base ?>pages/certifications.php"
-               class="nav-link <?= ($currentPage === 'certifications') ? 'active' : '' ?>">
-                <span class="nav-icon">🏅</span> Certifications
-            </a>
-
             <a href="<?= $base ?>pages/avenir.php"
                class="nav-link <?= ($currentPage === 'avenir') ? 'active' : '' ?>">
                 <span class="nav-icon">🎯</span> Projet pro
+            </a>
+
+            <a href="<?= $base ?>pages/certifications.php"
+               class="nav-link <?= ($currentPage === 'certifications') ? 'active' : '' ?>">
+                <span class="nav-icon">🏅</span> Certifications
             </a>
 
             <a href="<?= $base ?>pages/contact.php"
