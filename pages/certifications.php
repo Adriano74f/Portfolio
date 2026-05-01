@@ -382,47 +382,6 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
-                <!-- Python Essentials 1 — Cisco -->
-                <div class="cert-card">
-                    <div class="cert-badge-wrap">🐍</div>
-                    <p class="cert-name">Python Essentials 1</p>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                    <p class="cert-date">Badge obtenu · Credly</p>
-                    <p class="cert-desc">
-                        Introduction à Python via le programme officiel Cisco NetAcad : syntaxe de base,
-                        variables, structures de données (listes, tuples, dictionnaires), fonctions et
-                        gestion des fichiers. Python est le langage de référence en cybersécurité pour
-                        l'automatisation, le scripting d'outils (scanners, parsers de logs, exploits),
-                        et l'analyse de données. Cette certification pose les bases indispensables pour
-                        aller plus loin en cybersécurité offensive et défensive.
-                    </p>
-                    <span class="cert-status">✔ Badge obtenu</span>
-                    <div class="project-links">
-                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir sur Credly →</a>
-                    </div>
-                </div>
-
-                <!-- SecNumAcadémie -->
-                <div class="cert-card">
-                    <div class="cert-badge-wrap">🔐</div>
-                    <p class="cert-name">SecNumAcadémie</p>
-                    <p class="cert-issuer">ANSSI</p>
-                    <p class="cert-date">En cours de préparation</p>
-                    <p class="cert-desc">
-                        SecNumAcadémie est le MOOC de référence en cybersécurité proposé par l'ANSSI (Agence Nationale
-                        de la Sécurité des Systèmes d'Information). Il couvre les bases de la sécurité numérique :
-                        fonctionnement des réseaux, mécanismes d'authentification, cryptographie symétrique et asymétrique,
-                        gestion des risques et des incidents, et bonnes pratiques en entreprise. Obtenir l'attestation de
-                        réussite de l'ANSSI est une référence sérieuse et reconnue dans le domaine de la cybersécurité en France.
-                    </p>
-                    <span class="cert-status in-progress">⏳ En cours</span>
-                    <div class="project-links">
-                        <a class="btn-sm" href="https://secnumacademie.gouv.fr/" target="_blank" rel="noopener">ANSSI →</a>
-                    </div>
-                </div>
-
-            </div>
-
             <p class="muted" style="margin-top:16px;font-size:.72rem;font-family:var(--font-mono);">
                 ⚡ Page mise à jour régulièrement au fur et à mesure de l'obtention de nouvelles certifications.
             </p>
