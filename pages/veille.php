@@ -190,7 +190,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">01</div>
                     <div class="article-body">
                         <p class="article-title">Backdoor XZ Utils (CVE-2024-3094) — Attaque supply chain sophistiquée</p>
-                        <p class="article-meta">CERT-FR / Andres Freund — Mars 2024 · Une porte dérobée dissimulée dans la bibliothèque de compression XZ Utils a failli compromettre des millions de serveurs Linux. Découverte de justesse par un ingénieur Microsoft.</p>
+                        <p class="article-source">CERT-FR / Andres Freund · Mars 2024</p>
+                        <p class="article-desc">Une porte dérobée dissimulée dans la bibliothèque de compression XZ Utils a failli compromettre des millions de serveurs Linux. Découverte de justesse par un ingénieur Microsoft.</p>
                     </div>
                     <a class="btn-sm" href="https://www.cert.ssi.gouv.fr/avis/CERTFR-2024-AVI-0257/" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -199,7 +200,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">02</div>
                     <div class="article-body">
                         <p class="article-title">Fuite de données Free Telecom — 19 millions de clients exposés</p>
-                        <p class="article-meta">ANSSI / CNIL — Octobre 2024 · L'opérateur Free a subi une violation de données massive : IBAN, noms, adresses et données personnelles de 19 millions d'abonnés mis en vente sur des forums cybercriminels.</p>
+                        <p class="article-source">ANSSI / CNIL · Octobre 2024</p>
+                        <p class="article-desc">L'opérateur Free a subi une violation de données massive : IBAN, noms, adresses et données personnelles de 19 millions d'abonnés mis en vente sur des forums cybercriminels.</p>
                     </div>
                     <a class="btn-sm" href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -208,7 +210,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">03</div>
                     <div class="article-body">
                         <p class="article-title">Directive NIS2 en vigueur — Renforcement de la cybersécurité en Europe</p>
-                        <p class="article-meta">ANSSI / Journal officiel UE — Octobre 2024 · La directive NIS2 impose à des milliers d'entreprises et administrations françaises de renforcer leur sécurité informatique sous peine de sanctions. Élargissement au secteur public et PME critiques.</p>
+                        <p class="article-source">ANSSI / Journal officiel UE · Octobre 2024</p>
+                        <p class="article-desc">La directive NIS2 impose à des milliers d'entreprises et administrations françaises de renforcer leur sécurité informatique sous peine de sanctions. Élargissement au secteur public et PME critiques.</p>
                     </div>
                     <a class="btn-sm" href="https://www.ssi.gouv.fr/entreprise/reglementation/directive-nis-2/" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -217,7 +220,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">04</div>
                     <div class="article-body">
                         <p class="article-title">IA générative au service des cyberattaques — Phishing et deepfakes vocaux</p>
-                        <p class="article-meta">ANSSI / The Hacker News — 2024/2025 · Les attaquants utilisent désormais des outils d'IA pour créer des e-mails de phishing indétectables, des faux appels vocaux (voice cloning) et de faux visages en visioconférence pour tromper les victimes.</p>
+                        <p class="article-source">ANSSI / The Hacker News · 2024/2025</p>
+                        <p class="article-desc">Les attaquants utilisent désormais des outils d'IA pour créer des e-mails de phishing indétectables, des faux appels vocaux (voice cloning) et de faux visages en visioconférence pour tromper les victimes.</p>
                     </div>
                     <a class="btn-sm" href="https://www.ssi.gouv.fr/actualite/intelligence-artificielle-et-cybersecurite/" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -226,7 +230,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">05</div>
                     <div class="article-body">
                         <p class="article-title">Ransomware sur les collectivités locales — Recrudescence en France</p>
-                        <p class="article-meta">CERT-FR / ANSSI — 2024 · Les mairies, hôpitaux et établissements scolaires restent des cibles privilégiées des groupes ransomware (LockBit, ALPHV). L'ANSSI recense une hausse de 30 % des incidents en 2024 sur le secteur public.</p>
+                        <p class="article-source">CERT-FR / ANSSI · 2024</p>
+                        <p class="article-desc">Les mairies, hôpitaux et établissements scolaires restent des cibles privilégiées des groupes ransomware (LockBit, ALPHV). L'ANSSI recense une hausse de 30 % des incidents en 2024 sur le secteur public.</p>
                     </div>
                     <a class="btn-sm" href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2024-CTI-001/" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -238,7 +243,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">06</div>
                     <div class="article-body">
                         <p class="article-title">Rust intégré dans le noyau Linux — Révolution de la sécurité mémoire</p>
-                        <p class="article-meta">The Linux Foundation / LWN.net — 2024 · Le noyau Linux accueille ses premiers pilotes écrits en Rust, un langage qui garantit l'absence de bugs mémoire à la compilation. Une avancée majeure contre les failles de type buffer overflow.</p>
+                        <p class="article-source">The Linux Foundation / LWN.net · 2024</p>
+                        <p class="article-desc">Le noyau Linux accueille ses premiers pilotes écrits en Rust, un langage qui garantit l'absence de bugs mémoire à la compilation. Une avancée majeure contre les failles de type buffer overflow.</p>
                     </div>
                     <a class="btn-sm" href="https://www.kernel.org/doc/html/next/rust/index.html" target="_blank" rel="noopener">Lire →</a>
                 </div>
@@ -247,7 +253,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="article-num">07</div>
                     <div class="article-body">
                         <p class="article-title">GitHub Copilot et IA générative — La programmation assistée devient standard</p>
-                        <p class="article-meta">GitHub / Stack Overflow Survey — 2024/2025 · Plus de 55 % des développeurs utilisent désormais un outil d'IA dans leur workflow quotidien. GitHub Copilot, Cursor, Claude Code transforment la façon d'écrire et de déboguer du code.</p>
+                        <p class="article-source">GitHub / Stack Overflow Survey · 2024/2025</p>
+                        <p class="article-desc">Plus de 55 % des développeurs utilisent désormais un outil d'IA dans leur workflow quotidien. GitHub Copilot, Cursor, Claude Code transforment la façon d'écrire et de déboguer du code.</p>
                     </div>
                     <a class="btn-sm" href="https://survey.stackoverflow.co/2024/" target="_blank" rel="noopener">Lire →</a>
                 </div>
