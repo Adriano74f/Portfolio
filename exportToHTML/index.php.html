@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>index.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #2aacb8;}
+.s13 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* index.php — Page d'accueil / Présentation</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Présentation'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'index'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">0</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+    <span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+        <span class="s11">&lt;!-- ── Hero ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card visible&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">padding</span><span class="s7">: </span><span class="s12">32</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;hero&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;hero-avatar&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;img </span><span class="s9">src</span><span class="s10">=&quot;img/Photo.png&quot; </span><span class="s9">alt</span><span class="s10">=&quot;Photo de profil — Adriano Ferreira Da Silva&quot; </span><span class="s8">/&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;hero-content&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h1 </span><span class="s9">class</span><span class="s10">=&quot;hero-name&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;accent-dot&quot;</span><span class="s8">&gt;&lt;/span&gt;</span><span class="s7">Adriano</span><span class="s8">&lt;br&gt;</span>
+                        <span class="s8">&lt;span&gt;</span><span class="s7">Ferreira Da Silva</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/h1&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;hero-role&quot;</span><span class="s8">&gt;</span><span class="s7">BTS SIO 2 — Option SLAM · Lycée Gabriel Fauré</span><span class="s8">&lt;/p&gt;</span>
+
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;hero-chips&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;chip accent&quot;</span><span class="s8">&gt;</span><span class="s7">SLAM</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;chip&quot;</span><span class="s8">&gt;</span><span class="s7">Développement Web</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;chip&quot;</span><span class="s8">&gt;</span><span class="s7">PHP · MySQL · HTML/CSS</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;chip&quot;</span><span class="s8">&gt;</span><span class="s7">Git / GitHub</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;chip&quot;</span><span class="s8">&gt;</span><span class="s7">Cybersécurité</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;hero-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn btn-primary&quot; </span><span class="s9">href</span><span class="s10">=&quot;img/Ferreira-Da-Silva-Adriano-CV.pdf&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot;</span><span class="s8">&gt;</span>
+                            <span class="s7">📄 Télécharger le CV</span>
+                        <span class="s8">&lt;/a&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn btn-secondary&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://www.linkedin.com/in/adriano-ferreira-da-silva-382138339/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span>
+                            <span class="s7">🔗 LinkedIn</span>
+                        <span class="s8">&lt;/a&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn btn-secondary&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span>
+                            <span class="s7">🐙 GitHub</span>
+                        <span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Infos personnelles ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">ℹ️</span><span class="s8">&lt;/span&gt;</span><span class="s7">Informations personnelles</span>
+            <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-grid&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Nom complet</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Adriano Ferreira Da Silva</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Formation</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">BTS SIO 2 — Option SLAM</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Établissement</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Lycée Gabriel Fauré</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Localisation</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Annecy, Haute-Savoie</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── À propos ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">💬</span><span class="s8">&lt;/span&gt;</span><span class="s7">À propos de moi</span>
+            <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Passionné par l'informatique depuis de nombreuses années, j'ai commencé mon parcours</span>
+                <span class="s7">professionnel avec plusieurs stages en audiovisuel et en maintenance informatique avant</span>
+                <span class="s7">d'intégrer le BTS SIO option SLAM. Ces expériences m'ont permis de découvrir des</span>
+                <span class="s7">environnements techniques variés et de confirmer mon goût pour la résolution de problèmes</span>
+                <span class="s7">complexes et les technologies réseau.</span>
+            <span class="s8">&lt;/p&gt;</span>
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Sérieux et curieux, je souhaite à terme me spécialiser en cybersécurité en intégrant un</span>
+                <span class="s7">Bachelor, tout en continuant à développer mes compétences en développement web, réseaux</span>
+                <span class="s7">et administration système acquises au fil de mes stages et projets personnels.</span>
+            <span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Parcours / Timeline ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📅</span><span class="s8">&lt;/span&gt;</span><span class="s7">Parcours scolaire </span><span class="s13">&amp;amp; </span><span class="s7">professionnel</span>
+            <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Janvier — Mars 2026</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — Mairie de Ville-la-Grand · Technicien réseau</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Administration réseau, VPN, GPO, sécurisation d'infrastructure, remplacement de 40 postes, sensibilisation cybersécurité.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">2024 — 2026</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">BTS SIO option SLAM — Lycée Gabriel Fauré, Annecy</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Formation en développement d'applications, bases de données, réseaux, cybersécurité et gestion de projet.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Juin — Juillet 2025</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — OCI Informatique </span><span class="s13">&amp;amp; </span><span class="s7">Digital · Technicien</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Maintenance postes, pare-feu Stormshield, Microsoft 365, GPO, mise à jour site web. Thonon-les-Bains.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Juin — Juillet 2024</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — TAMTAM MUSIQUE · Technicien audiovisuel</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Installation et configuration de matériel audiovisuel, assistance technique lors d'événements. Annemasse.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Juin — Juillet 2023</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — Next Vision · Technicien audiovisuel</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Installation d'équipements audiovisuels professionnels, maintenance et dépannage. Annemasse.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Juin — Juillet 2022</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — TAMTAM MUSIQUE · Technicien audiovisuel</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Première immersion en entreprise, montage et démontage de matériel audiovisuel. Annemasse.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;timeline-item&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-date&quot;</span><span class="s8">&gt;</span><span class="s7">Mai — Juillet 2021</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tl-title&quot;</span><span class="s8">&gt;</span><span class="s7">Stage — OCI Informatique </span><span class="s13">&amp;amp; </span><span class="s7">Digital · Technicien réparation</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;tl-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Diagnostic et réparation de matériels informatiques, tests et contrôle qualité. Ville-la-Grand.</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span></pre>
+</body>
+</html>

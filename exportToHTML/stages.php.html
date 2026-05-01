@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>stages.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #56a8f5;}
+.s13 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+stages.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/stages.php — Expériences en entreprise</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Stages'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'stages'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">1</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+    <span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-header&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🏢</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;h1&gt;</span><span class="s7">Expériences en entreprise</span><span class="s8">&lt;/h1&gt;</span>
+            <span class="s8">&lt;p&gt;</span><span class="s7">Stages effectués durant les 2 années de BTS SIO SLAM et avant la formation</span><span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Grille des stages ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📋</span><span class="s8">&lt;/span&gt;</span><span class="s7">Récapitulatif des stages</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stages-grid&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 5 — Mairie de Ville-la-Grand --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">Mairie de Ville-la-Grand</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-purple&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 5 · BTS 2</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Janvier 2026 — Mars 2026 (3 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien réseau</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Administration réseau et infrastructure informatique municipale</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Mise en place et configuration de VPN pour les agents</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Gestion des GPO (Group Policy Objects) et présentation aux équipes</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Création de comptes utilisateurs / groupes et gestion des droits</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Sécurisation de visiophones pour plusieurs écoles de la commune</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Sensibilisation des utilisateurs à la cybersécurité</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Rédaction de documentations techniques et rapports hebdomadaires</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 4 — OCI Informatique --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">OCI Informatique </span><span class="s12">&amp;amp; </span><span class="s7">Digital</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-green&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 4 · BTS 1</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Juin 2025 — Juillet 2025 (2 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Configuration et résolution de pannes d'imprimantes réseau</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Remplacement et migration de postes informatiques</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Maintenance de sessions utilisateurs sous Windows</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Mise en place de pare-feu Stormshield sur des postes</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Configuration de boîtes mail avec licences Microsoft 365</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Réalisation d'une stratégie de groupe (GPO) pour la configuration de mails</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Mise à jour de contenu sur le site web de l'entreprise</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 3 — TAMTAM MUSIQUE 2024 --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">TAMTAM MUSIQUE</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-blue&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 3</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Juin 2024 — Juillet 2024 (2 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien audiovisuel</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Installation et configuration de matériel audiovisuel</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Assistance technique lors d'événements et de productions</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Câblage et raccordement des équipements son et lumière</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Support technique et maintenance du parc matériel</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 2 — Next Vision 2023 --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">Next Vision</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-orange&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 2</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Juin 2023 — Juillet 2023 (2 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien audiovisuel</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Installation et paramétrage d'équipements audiovisuels professionnels</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Maintenance et dépannage de matériels son et image</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Assistance lors de prestations et événements</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 1 — TAMTAM MUSIQUE 2022 --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">TAMTAM MUSIQUE</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-yellow&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 1</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Juin 2022 — Juillet 2022 (2 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien audiovisuel</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Découverte du métier de technicien audiovisuel en environnement professionnel</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Installation d'équipements et assistance lors de productions</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Apprentissage des procédures de montage et démontage de matériel</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Stage 0 — OCI 2021 --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;stage-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3 </span><span class="s9">class</span><span class="s10">=&quot;stage-company&quot;</span><span class="s8">&gt;</span><span class="s7">OCI Informatique </span><span class="s12">&amp;amp; </span><span class="s7">Digital</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;badge badge-grey&quot;</span><span class="s8">&gt;</span><span class="s7">Stage 0</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-period&quot;</span><span class="s8">&gt;</span><span class="s7">📅 Mai 2021 — Juillet 2021 (3 mois)</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;stage-role&quot;</span><span class="s8">&gt;</span><span class="s7">🎯 Technicien réparation</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;stage-tasks&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Diagnostic et réparation de matériels informatiques (PC, périphériques)</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Tests et contrôle qualité avant restitution au client</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;li&gt;</span><span class="s7">Première immersion dans un environnement informatique professionnel</span><span class="s8">&lt;/li&gt;</span>
+                    <span class="s8">&lt;/ul&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Bilan stage BTS 2 : Mairie de Ville-la-Grand ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🔍</span><span class="s8">&lt;/span&gt;</span><span class="s7">Mairie de Ville-la-Grand — Bilan détaillé</span><span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-grid&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">margin-bottom</span><span class="s7">: </span><span class="s13">20</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Entreprise</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Mairie de Ville-la-Grand</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Durée</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">3 mois</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Secteur</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Administration publique / DSI</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Poste</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Technicien réseau</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Ce stage en mairie m'a permis d'évoluer dans un environnement réseau complexe et réglementé.</span>
+                <span class="s7">J'ai participé activement à des projets concrets : déploiement de VPN, mise en place de GPO,</span>
+                <span class="s7">sécurisation d'infrastructure et remplacement massif de postes (40 postes en une semaine).</span>
+                <span class="s7">J'ai également rédigé des documentations techniques et sensibilisé les utilisateurs à la cybersécurité,</span>
+                <span class="s7">renforçant ainsi mes compétences aussi bien techniques que relationnelles.</span>
+            <span class="s8">&lt;/p&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;divider&quot;</span><span class="s8">&gt;&lt;/div&gt;</span>
+
+            <span class="s8">&lt;h3 </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">font-size</span><span class="s7">:</span><span class="s13">0.8</span><span class="s10">rem</span><span class="s7">; </span><span class="s9">font-family</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--font-display</span><span class="s7">); </span><span class="s9">text-transform</span><span class="s7">:</span><span class="s10">uppercase</span><span class="s7">; </span><span class="s9">letter-spacing</span><span class="s7">:</span><span class="s13">0.8</span><span class="s10">px</span><span class="s7">; </span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--muted</span><span class="s7">); </span><span class="s9">margin-bottom</span><span class="s7">:</span><span class="s13">12</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Compétences mobilisées</span>
+            <span class="s8">&lt;/h3&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Active Directory</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">GPO</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">VPN</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">GLPI</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Cybersécurité réseau</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Windows Server</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Scripting</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Documentation technique</span><span class="s8">&lt;/span&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Bilan stage BTS 1 : OCI Informatique ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🔍</span><span class="s8">&lt;/span&gt;</span><span class="s7">OCI Informatique </span><span class="s12">&amp;amp; </span><span class="s7">Digital — Bilan détaillé</span><span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-grid&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">margin-bottom</span><span class="s7">: </span><span class="s13">20</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Entreprise</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">OCI Informatique </span><span class="s12">&amp;amp; </span><span class="s7">Digital</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Durée</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">2 mois</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Secteur</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Maintenance </span><span class="s12">&amp;amp; </span><span class="s7">services informatiques</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;info-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;ib-label&quot;</span><span class="s8">&gt;</span><span class="s7">Poste</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;ib-value&quot;</span><span class="s8">&gt;</span><span class="s7">Technicien</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Ce stage chez OCI m'a permis de mettre en pratique les connaissances acquises en BTS SIO</span>
+                <span class="s7">sur des environnements clients réels. J'ai pu intervenir sur des problématiques variées :</span>
+                <span class="s7">pare-feu Stormshield, déploiement Microsoft 365, gestion de GPO et maintenance de postes.</span>
+                <span class="s7">L'autonomie demandée m'a amené à rechercher des solutions techniques par moi-même,</span>
+                <span class="s7">une compétence clé pour la vie professionnelle.</span>
+            <span class="s8">&lt;/p&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;divider&quot;</span><span class="s8">&gt;&lt;/div&gt;</span>
+
+            <span class="s8">&lt;h3 </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">font-size</span><span class="s7">:</span><span class="s13">0.8</span><span class="s10">rem</span><span class="s7">; </span><span class="s9">font-family</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--font-display</span><span class="s7">); </span><span class="s9">text-transform</span><span class="s7">:</span><span class="s10">uppercase</span><span class="s7">; </span><span class="s9">letter-spacing</span><span class="s7">:</span><span class="s13">0.8</span><span class="s10">px</span><span class="s7">; </span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--muted</span><span class="s7">); </span><span class="s9">margin-bottom</span><span class="s7">:</span><span class="s13">12</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Compétences mobilisées</span>
+            <span class="s8">&lt;/h3&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Stormshield</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Microsoft 365</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">GPO</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Maintenance Windows</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Réseaux informatiques</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Diagnostic matériel</span><span class="s8">&lt;/span&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span></pre>
+</body>
+</html>

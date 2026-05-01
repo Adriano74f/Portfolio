@@ -229,60 +229,114 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="card-title"><span class="ct-icon">🏆</span>Mes certifications obtenues</div>
             <div class="cert-grid">
 
+                <!-- Pix -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">🟦</div>
+                    <p class="cert-name">Certification Pix</p>
+                    <p class="cert-issuer">Pix · Ministère de l'Éducation nationale</p>
+                    <p class="cert-date">Obtenue le 16 mars 2026</p>
+                    <p class="cert-desc">
+                        Pix est la certification officielle des compétences numériques en France. Elle couvre 5 grands domaines :
+                        la gestion de l'information et des données, la communication et la collaboration en ligne,
+                        la création de contenus numériques, la protection des données personnelles et la cybersécurité,
+                        ainsi que l'environnement numérique (logiciels, matériels, réseaux). Cette certification atteste
+                        d'un socle numérique fondamental reconnu par l'État, utile dans tous les métiers du numérique.
+                    </p>
+                    <span class="cert-status">✔ Certifié</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="../assets/docs/btssio2-certification-pix-20260316_split_FERREIRA DA SILVA.pdf" target="_blank" rel="noopener">Voir le PDF →</a>
+                        <a class="btn-sm" href="https://pix.fr" target="_blank" rel="noopener">Pix →</a>
+                    </div>
+                </div>
+
+                <!-- Network Defense — Cisco -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">🛡️</div>
+                    <p class="cert-name">Network Defense</p>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">Obtenu le 1 mai 2026</p>
+                    <p class="cert-desc">
+                        Cette certification Cisco porte sur la défense active des infrastructures réseau. Elle développe
+                        des compétences en configuration de pare-feu et de listes de contrôle d'accès (ACL), en mise en place
+                        de VPN pour sécuriser les communications, en détection d'intrusions (IDS/IPS), en surveillance du
+                        trafic réseau et en analyse des menaces. Elle couvre également les principes de segmentation réseau,
+                        de DMZ et de politique de sécurité périmétrique. Un badge numérique vérifié est disponible sur Credly.
+                    </p>
+                    <span class="cert-status">✔ Badge obtenu</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="https://www.credly.com/badges/f6f092b4-5c94-4096-9967-ea314f4c4756" target="_blank" rel="noopener">Voir le badge →</a>
+                    </div>
+                </div>
+
+                <!-- JavaScript — OpenClassrooms -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🟡</div>
                     <p class="cert-name">Apprenez à programmer avec JavaScript</p>
                     <p class="cert-issuer">OpenClassrooms</p>
                     <p class="cert-date">Démarré le 19 sept. 2025 · Terminé</p>
-                    <p class="cert-desc">Bases du langage JavaScript : variables, fonctions, manipulation du DOM, événements et interaction avec les pages web.</p>
+                    <p class="cert-desc">
+                        Ce cours pose les fondations de la programmation côté client. On y apprend les types de données,
+                        les structures de contrôle (conditions, boucles), les fonctions et la portée des variables.
+                        La partie clé concerne la manipulation du DOM : sélectionner des éléments HTML, modifier leur contenu
+                        dynamiquement et réagir aux événements utilisateur (clics, formulaires). C'est la base de tout
+                        développement web interactif, appliquée ensuite dans mes projets.
+                    </p>
                     <span class="cert-status">✔ Cours terminé</span>
                     <div class="project-links">
                         <a class="btn-sm" href="https://openclassrooms.com" target="_blank" rel="noopener">OpenClassrooms →</a>
                     </div>
                 </div>
 
+                <!-- API REST — OpenClassrooms -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🔵</div>
                     <p class="cert-name">Adoptez les API REST pour vos projets web</p>
                     <p class="cert-issuer">OpenClassrooms</p>
                     <p class="cert-date">Démarré le 7 nov. 2025 · Terminé</p>
-                    <p class="cert-desc">Conception et consommation d'API REST : verbes HTTP, JSON, authentification et bonnes pratiques. Appliqué dans WeatherQuest.</p>
+                    <p class="cert-desc">
+                        Ce cours couvre l'architecture REST et son fonctionnement : les méthodes HTTP (GET, POST, PUT, DELETE),
+                        la structure des réponses JSON, la gestion des codes de statut et l'authentification via clés API ou tokens.
+                        On apprend à consommer des APIs tierces mais aussi à comprendre la logique côté serveur. Ces compétences
+                        sont directement appliquées dans mon projet WeatherQuest qui interroge une API météo en temps réel.
+                    </p>
                     <span class="cert-status">✔ Cours terminé</span>
                     <div class="project-links">
                         <a class="btn-sm" href="https://openclassrooms.com" target="_blank" rel="noopener">OpenClassrooms →</a>
                     </div>
                 </div>
 
+                <!-- Tests Symfony — OpenClassrooms -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">⚫</div>
                     <p class="cert-name">Testez fonctionnellement votre application PHP Symfony</p>
                     <p class="cert-issuer">OpenClassrooms</p>
                     <p class="cert-date">Démarré le 10 oct. 2025 · Terminé</p>
-                    <p class="cert-desc">Tests fonctionnels avec Symfony : suite de tests, Panther, couverture de code et intégration continue.</p>
+                    <p class="cert-desc">
+                        Ce cours introduit la culture du test dans le développement web. On y apprend à rédiger des tests
+                        fonctionnels avec PHPUnit et Panther pour simuler les actions d'un utilisateur sur une application Symfony.
+                        Les notions abordées incluent : la couverture de code, les assertions, les tests de régression et
+                        l'intégration dans une pipeline CI/CD. Tester son code est une pratique professionnelle indispensable
+                        pour livrer des applications fiables.
+                    </p>
                     <span class="cert-status">✔ Cours terminé</span>
                     <div class="project-links">
                         <a class="btn-sm" href="https://openclassrooms.com" target="_blank" rel="noopener">OpenClassrooms →</a>
                     </div>
                 </div>
 
-                <div class="cert-card">
-                    <div class="cert-badge-wrap">🎖️</div>
-                    <p class="cert-name">Badge(s) Credly</p>
-                    <p class="cert-issuer">Credly — Adriano Ferreira Da Silva</p>
-                    <p class="cert-date">Voir profil Credly pour le détail</p>
-                    <p class="cert-desc">Badges numériques obtenus via Credly, attestant de compétences vérifiées dans le domaine informatique.</p>
-                    <span class="cert-status">✔ Badge(s) obtenu(s)</span>
-                    <div class="project-links">
-                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir Credly →</a>
-                    </div>
-                </div>
-
+                <!-- SecNumAcadémie -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🔐</div>
-                    <p class="cert-name">SecNumAcadémie — ANSSI</p>
+                    <p class="cert-name">SecNumAcadémie</p>
                     <p class="cert-issuer">ANSSI</p>
                     <p class="cert-date">En cours de préparation</p>
-                    <p class="cert-desc">Mooc cybersécurité de référence en France : réseaux, authentification, cryptographie et gestion des risques.</p>
+                    <p class="cert-desc">
+                        SecNumAcadémie est le MOOC de référence en cybersécurité proposé par l'ANSSI (Agence Nationale
+                        de la Sécurité des Systèmes d'Information). Il couvre les bases de la sécurité numérique :
+                        fonctionnement des réseaux, mécanismes d'authentification, cryptographie symétrique et asymétrique,
+                        gestion des risques et des incidents, et bonnes pratiques en entreprise. Obtenir l'attestation de
+                        réussite de l'ANSSI est une référence sérieuse et reconnue dans le domaine de la cybersécurité en France.
+                    </p>
                     <span class="cert-status in-progress">⏳ En cours</span>
                     <div class="project-links">
                         <a class="btn-sm" href="https://secnumacademie.gouv.fr/" target="_blank" rel="noopener">ANSSI →</a>

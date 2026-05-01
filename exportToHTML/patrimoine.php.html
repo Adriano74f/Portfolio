@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>patrimoine.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+patrimoine.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/patrimoine.php — Gestion du patrimoine informatique</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Patrimoine informatique'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'patrimoine'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">1</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+<span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+  <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-header&quot;</span><span class="s8">&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🗄️</span><span class="s8">&lt;/div&gt;</span>
+    <span class="s8">&lt;h1&gt;</span><span class="s7">Gestion du patrimoine informatique</span><span class="s8">&lt;/h1&gt;</span>
+    <span class="s8">&lt;p&gt;</span><span class="s7">Inventaire, maintenance, sécurisation et continuité du parc informatique</span><span class="s8">&lt;/p&gt;</span>
+  <span class="s8">&lt;/div&gt;</span>
+
+  <span class="s11">&lt;!-- ── Intro ── --&gt;</span>
+  <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📋</span><span class="s8">&lt;/span&gt;</span><span class="s7">Définition et enjeux</span><span class="s8">&lt;/div&gt;</span>
+    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+      <span class="s7">La gestion du patrimoine informatique désigne l'ensemble des activités permettant à une</span>
+      <span class="s7">organisation de maîtriser ses ressources informatiques tout au long de leur cycle de vie :</span>
+      <span class="s7">acquisition, déploiement, maintenance, mise à jour et retrait.</span>
+    <span class="s8">&lt;/p&gt;</span>
+    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+      <span class="s7">Dans le cadre du BTS SIO et de mes stages, j'ai eu l'occasion d'appliquer ces notions</span>
+      <span class="s7">en situation réelle, notamment lors de mon stage chez OCI Informatique.</span>
+    <span class="s8">&lt;/p&gt;</span>
+  <span class="s8">&lt;/div&gt;</span>
+
+  <span class="s11">&lt;!-- ── Grille 4 blocs ── --&gt;</span>
+  <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🔧</span><span class="s8">&lt;/span&gt;</span><span class="s7">Domaines couverts</span><span class="s8">&lt;/div&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-grid&quot;</span><span class="s8">&gt;</span>
+
+      <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-block&quot;</span><span class="s8">&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📦</span><span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;h3&gt;</span><span class="s7">Inventaire</span><span class="s8">&lt;/h3&gt;</span>
+        <span class="s8">&lt;p&gt;</span>
+          <span class="s7">Utilisation de GLPI pour le recensement et le suivi du parc informatique.</span>
+          <span class="s7">Collecte des informations matérielles (CPU, RAM, stockage) et logicielles</span>
+          <span class="s7">(OS, licences). </span><span class="s11">&lt;!-- 📝 Complète avec tes expériences concrètes --&gt;</span>
+        <span class="s8">&lt;/p&gt;</span>
+      <span class="s8">&lt;/div&gt;</span>
+
+      <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-block&quot;</span><span class="s8">&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🔧</span><span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;h3&gt;</span><span class="s7">Maintenance</span><span class="s8">&lt;/h3&gt;</span>
+        <span class="s8">&lt;p&gt;</span>
+          <span class="s7">Procédures de maintenance préventive (mises à jour OS et logiciels, nettoyage)</span>
+          <span class="s7">et curative (diagnostic de pannes, remplacement de composants).</span>
+          <span class="s7">Appliqué en stage chez OCI Informatique.</span>
+        <span class="s8">&lt;/p&gt;</span>
+      <span class="s8">&lt;/div&gt;</span>
+
+      <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-block&quot;</span><span class="s8">&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🛡️</span><span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;h3&gt;</span><span class="s7">Sécurisation</span><span class="s8">&lt;/h3&gt;</span>
+        <span class="s8">&lt;p&gt;</span>
+          <span class="s7">Mise en place de politiques de mots de passe robustes, gestion des droits</span>
+          <span class="s7">utilisateurs (principe du moindre privilège), configuration pare-feu de base,</span>
+          <span class="s7">sensibilisation RGPD et chiffrement des données sensibles.</span>
+        <span class="s8">&lt;/p&gt;</span>
+      <span class="s8">&lt;/div&gt;</span>
+
+      <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-block&quot;</span><span class="s8">&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;patri-icon&quot;</span><span class="s8">&gt;</span><span class="s7">💾</span><span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;h3&gt;</span><span class="s7">Sauvegarde &amp; Continuité</span><span class="s8">&lt;/h3&gt;</span>
+        <span class="s8">&lt;p&gt;</span>
+          <span class="s7">Application de la règle 3-2-1 (3 copies, 2 supports différents, 1 hors site).</span>
+          <span class="s7">Procédures de restauration. Plans de reprise d'activité basiques.</span>
+          <span class="s11">&lt;!-- 📝 Ajoute tes pratiques concrètes --&gt;</span>
+        <span class="s8">&lt;/p&gt;</span>
+      <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/div&gt;</span>
+  <span class="s8">&lt;/div&gt;</span>
+
+  <span class="s11">&lt;!-- ── Expérience terrain ── --&gt;</span>
+  <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🏢</span><span class="s8">&lt;/span&gt;</span><span class="s7">Application en entreprise — OCI Informatique</span><span class="s8">&lt;/div&gt;</span>
+    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+      <span class="s11">&lt;!-- 📝 Décris ici en détail ce que tu as fait chez OCI Informatique en matière de gestion du parc : 
+           - Quels outils as-tu utilisés (GLPI, tableur, autre) ? 
+           - As-tu réalisé un inventaire ? Sur combien de postes ? 
+           - Quelles procédures de maintenance as-tu appliquées ? 
+           - As-tu rencontré des pannes ? Comment les as-tu résolues ? --&gt;</span>
+      <span class="s7">Lors de mon stage chez OCI Informatique, j'ai participé à la gestion du parc informatique</span>
+      <span class="s7">de plusieurs clients. J'ai notamment réalisé des interventions de maintenance sur des</span>
+      <span class="s7">postes Windows, appliqué des procédures de mise à jour et participé à l'audit du parc</span>
+      <span class="s7">à l'aide des outils mis à disposition.</span>
+    <span class="s8">&lt;/p&gt;</span>
+
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;divider&quot;</span><span class="s8">&gt;&lt;/div&gt;</span>
+
+    <span class="s8">&lt;h3 </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">font-size</span><span class="s7">:</span><span class="s12">0.8</span><span class="s10">rem</span><span class="s7">; </span><span class="s9">font-family</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--font-display</span><span class="s7">); </span><span class="s9">text-transform</span><span class="s7">:</span><span class="s10">uppercase</span><span class="s7">; </span><span class="s9">letter-spacing</span><span class="s7">:</span><span class="s12">0.8</span><span class="s10">px</span><span class="s7">; </span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--muted</span><span class="s7">); </span><span class="s9">margin-bottom</span><span class="s7">:</span><span class="s12">12</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+      <span class="s7">Outils et technologies utilisés</span>
+    <span class="s8">&lt;/h3&gt;</span>
+    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+      <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">GLPI</span><span class="s8">&lt;/span&gt;</span>
+      <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Windows 10/11</span><span class="s8">&lt;/span&gt;</span>
+      <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Active Directory</span><span class="s8">&lt;/span&gt;</span>
+      <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Audit matériel</span><span class="s8">&lt;/span&gt;</span>
+      <span class="s11">&lt;!-- 📝 Modifie selon les vrais outils --&gt;</span>
+    <span class="s8">&lt;/div&gt;</span>
+  <span class="s8">&lt;/div&gt;</span>
+
+<span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span>
+</pre>
+</body>
+</html>

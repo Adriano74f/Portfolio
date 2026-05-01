@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>projets.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #2aacb8;}
+.s13 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+projets.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/projets.php — Projets PPE et personnels</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Projets'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'projets'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">1</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+    <span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-header&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-icon&quot;</span><span class="s8">&gt;</span><span class="s7">💻</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;h1&gt;</span><span class="s7">Projets réalisés</span><span class="s8">&lt;/h1&gt;</span>
+            <span class="s8">&lt;p&gt;</span><span class="s7">Projets encadrés (PPE) et projets personnels développés durant le BTS</span><span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── PPE ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🏫</span><span class="s8">&lt;/span&gt;</span><span class="s7">Projets Professionnels Encadrés (PPE)</span><span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;projects-grid&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s11">&lt;!-- PPE — GSB Gestion des rapports de visites --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">GSB — Gestion des rapports de visites</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-ppe&quot;</span><span class="s8">&gt;</span><span class="s7">PPE</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Application web de gestion des rapports de visites médicales pour le laboratoire fictif</span>
+                        <span class="s7">Galaxy Swiss Bourdin. Conception de la base de données, développement back-end MVC</span>
+                        <span class="s7">et interface d'administration. Projet fil rouge du BTS SIO.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">TypeScript</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">MySQL</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">MVC</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">UML</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/GSB-Gestion-rapports-visites&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+                <span class="s11">&lt;!-- PPE — WeatherQuest --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">WeatherQuest — Application météo Android</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-ppe&quot;</span><span class="s8">&gt;</span><span class="s7">PPE</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Application Android développée en Java consommant une API météo externe (OpenWeatherMap).</span>
+                        <span class="s7">Affichage des conditions météo en temps réel, gestion des erreurs réseau</span>
+                        <span class="s7">et interface utilisateur adaptée aux mobiles.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Java</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Android</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">API REST</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">JSON</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/WeatherQuest&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+                <span class="s11">&lt;!-- PPE — DiiageCustomerApp --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">DiiageCustomerApp — Gestion de clients</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-ppe&quot;</span><span class="s8">&gt;</span><span class="s7">PPE</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Application de gestion de clients développée en C# dans le cadre d'un projet collaboratif.</span>
+                        <span class="s7">Interface graphique WPF, opérations CRUD complètes et connexion à une base de données</span>
+                        <span class="s7">relationnelle SQL.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">C#</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">.NET</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">WPF</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">SQL</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">UML</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/DiiageCustomerApp&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Projets personnels ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🛠️</span><span class="s8">&lt;/span&gt;</span><span class="s7">Projets personnels</span><span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;projects-grid&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s11">&lt;!-- Projet 2FA --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">Authentification 2FA</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-perso&quot;</span><span class="s8">&gt;</span><span class="s7">Personnel</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Implémentation d'une authentification à double facteur en PHP avec plusieurs couches</span>
+                        <span class="s7">de sécurité : TOTP, protection contre les attaques brute-force, gestion sécurisée</span>
+                        <span class="s7">des sessions et protection CSRF.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Sécurité web</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">TOTP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Sessions</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/2FA&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+                <span class="s11">&lt;!-- NoteProPratique --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">NoteProPratique</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-perso&quot;</span><span class="s8">&gt;</span><span class="s7">Personnel</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Application web de prise de notes professionnelle développée en PHP.</span>
+                        <span class="s7">Interface responsive, gestion des comptes utilisateurs et stockage</span>
+                        <span class="s7">en base de données MySQL.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">MySQL</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">CSS3</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Responsive</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/NoteProPratique&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+                <span class="s11">&lt;!-- Forum-Instagram --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">Forum style Instagram</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-perso&quot;</span><span class="s8">&gt;</span><span class="s7">Personnel</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Forum web inspiré d'Instagram : publication de posts avec images, système de commentaires,</span>
+                        <span class="s7">gestion des profils utilisateurs et authentification sécurisée.</span>
+                        <span class="s7">Projet complet full-stack en PHP.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">MySQL</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">HTML/CSS</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Upload fichiers</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/Forum-Instagram&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+                <span class="s11">&lt;!-- Portfolio --&gt;</span>
+                <span class="s8">&lt;article </span><span class="s9">class</span><span class="s10">=&quot;project-card&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-top&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;h3&gt;</span><span class="s7">Portfolio BTS</span><span class="s8">&lt;/h3&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;project-type-perso&quot;</span><span class="s8">&gt;</span><span class="s7">Personnel</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;project-desc&quot;</span><span class="s8">&gt;</span>
+                        <span class="s7">Conception et développement de ce portfolio en PHP/HTML/CSS/JS avec architecture</span>
+                        <span class="s7">multi-pages, navbar responsive, formulaire de contact et animations au scroll.</span>
+                        <span class="s7">Réalisé pour la présentation de l'oral BTS SIO.</span>
+                    <span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">HTML5</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">CSS3</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">JavaScript</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;project-links&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://github.com/Adriano74f/Portfolio&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">GitHub →</span><span class="s8">&lt;/a&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/article&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Synthèse ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📊</span><span class="s8">&lt;/span&gt;</span><span class="s7">Bilan des compétences développées</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Ces projets m'ont permis de développer une approche méthodique du développement logiciel :</span>
+                <span class="s7">analyse des besoins, modélisation, développement itératif, tests et déploiement.</span>
+                <span class="s7">Ils constituent des preuves concrètes de mes compétences techniques et de ma capacité</span>
+                <span class="s7">à mener un projet de bout en bout.</span>
+            <span class="s8">&lt;/p&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tech-tags&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">margin-top</span><span class="s7">: </span><span class="s12">12</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Analyse des besoins</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Modélisation UML</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Développement Full-Stack</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Sécurité applicative</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Tests </span><span class="s13">&amp;amp; </span><span class="s7">débogage</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Versioning Git</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">API REST</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tech-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Documentation</span><span class="s8">&lt;/span&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span></pre>
+</body>
+</html>

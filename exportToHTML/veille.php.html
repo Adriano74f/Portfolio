@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>veille.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+veille.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/veille.php — Veille technologique</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Veille technologique'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'veille'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">1</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+    <span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-header&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📡</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;h1&gt;</span><span class="s7">Veille technologique</span><span class="s8">&lt;/h1&gt;</span>
+            <span class="s8">&lt;p&gt;</span><span class="s7">Suivi des évolutions du secteur informatique durant les 2 ans de BTS</span><span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Sujet de veille ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🔭</span><span class="s8">&lt;/span&gt;</span><span class="s7">Sujet de veille</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;veille-topic-box&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;vt-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🛡️</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;div&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;vt-title&quot;</span><span class="s8">&gt;</span><span class="s7">Cybersécurité — Menaces, attaques et bonnes pratiques</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;vt-sub&quot;</span><span class="s8">&gt;</span><span class="s7">Sujet suivi depuis septembre 2024 — Impact sur les métiers du réseau et du développement</span><span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">La cybersécurité est devenue un enjeu majeur pour toutes les organisations, qu'elles soient</span>
+                <span class="s7">publiques ou privées. Durant mes deux années de BTS SIO, j'ai suivi de près les évolutions</span>
+                <span class="s7">des menaces informatiques : ransomwares, attaques Man-In-The-Middle, phishing ciblé ou encore</span>
+                <span class="s7">vulnérabilités dans les infrastructures réseau. Mes stages à la Mairie de Ville-la-Grand et</span>
+                <span class="s7">chez OCI Informatique m'ont permis de confronter ces connaissances théoriques à des situations</span>
+                <span class="s7">réelles : mise en place de VPN, configuration de pare-feu, sensibilisation des utilisateurs</span>
+                <span class="s7">et bonnes pratiques Active Directory. Cette veille nourrit directement mon projet de poursuivre</span>
+                <span class="s7">vers un Bachelor en cybersécurité.</span>
+            <span class="s8">&lt;/p&gt;</span>
+
+            <span class="s8">&lt;div&gt;</span>
+                <span class="s8">&lt;p </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">font-size</span><span class="s7">:</span><span class="s12">0.72</span><span class="s10">rem</span><span class="s7">; </span><span class="s9">text-transform</span><span class="s7">:</span><span class="s10">uppercase</span><span class="s7">; </span><span class="s9">letter-spacing</span><span class="s7">:</span><span class="s12">1</span><span class="s10">px</span><span class="s7">; </span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--muted</span><span class="s7">); </span><span class="s9">font-family</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--font-display</span><span class="s7">); </span><span class="s9">font-weight</span><span class="s7">:</span><span class="s12">700</span><span class="s7">; </span><span class="s9">margin-bottom</span><span class="s7">:</span><span class="s12">8</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                    <span class="s7">Outils de veille utilisés</span>
+                <span class="s8">&lt;/p&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;tool-chips&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">YouTube — Micode</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">YouTube — Techno</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">LinkedIn — ANSSI</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">LinkedIn — RISKINTEL</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">Twitter/X — @ANSSI_FR</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">Twitter/X — Cybermalveillance</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;tool-chip&quot;</span><span class="s8">&gt;</span><span class="s7">Google Actualités</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Sources de veille ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🌐</span><span class="s8">&lt;/span&gt;</span><span class="s7">Mes sources de veille</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;veille-sources-grid&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-yt&quot;</span><span class="s8">&gt;</span><span class="s7">▶</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">YouTube</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.youtube.com/@micode&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Micode</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.youtube.com/@Techno&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Techno</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-li&quot;</span><span class="s8">&gt;</span><span class="s7">in</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">LinkedIn</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.linkedin.com/company/anssi/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">ANSSI</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.linkedin.com/company/riskintel/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">RISKINTEL</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-x&quot;</span><span class="s8">&gt;</span><span class="s7">𝕏</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">Twitter / X</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://twitter.com/ANSSI_FR&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">@ANSSI_FR</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://twitter.com/cybermalveillance&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">@Cybermalveillance</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-gn&quot;</span><span class="s8">&gt;</span><span class="s7">G</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">Google Actualités</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Alertes « cybersécurité »</span><span class="s8">&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Alertes « ransomware »</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s11">&lt;!-- Sources complémentaires recommandées --&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-extra&quot;</span><span class="s8">&gt;</span><span class="s7">🔐</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">CERT-FR</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.cert.ssi.gouv.fr/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">cert.ssi.gouv.fr</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Alertes et avis de sécurité officiels</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-extra&quot;</span><span class="s8">&gt;</span><span class="s7">📰</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">The Hacker News</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://thehackernews.com/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">thehackernews.com</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Actualités cybermenaces mondiales</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-extra&quot;</span><span class="s8">&gt;</span><span class="s7">🕵️</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">Krebs on Security</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://krebsonsecurity.com/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">krebsonsecurity.com</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Analyses approfondies d'incidents</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-block&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-logo source-extra&quot;</span><span class="s8">&gt;</span><span class="s7">🇫🇷</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;source-info&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;source-name&quot;</span><span class="s8">&gt;</span><span class="s7">Cybermalveillance.gouv.fr</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;ul </span><span class="s9">class</span><span class="s10">=&quot;source-list&quot;</span><span class="s8">&gt;</span>
+                            <span class="s8">&lt;li&gt;&lt;a </span><span class="s9">href</span><span class="s10">=&quot;https://www.cybermalveillance.gouv.fr/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">cybermalveillance.gouv.fr</span><span class="s8">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="s8">&lt;li&gt;</span><span class="s7">Conseils pratiques et signalements</span><span class="s8">&lt;/li&gt;</span>
+                        <span class="s8">&lt;/ul&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Articles / faits marquants ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📰</span><span class="s8">&lt;/span&gt;</span><span class="s7">Faits marquants suivis</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;veille-articles&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-row&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-num&quot;</span><span class="s8">&gt;</span><span class="s7">01</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-body&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-title&quot;</span><span class="s8">&gt;</span><span class="s7">Attaque Man-In-The-Middle (MITM) — Démonstration et prévention</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-meta&quot;</span><span class="s8">&gt;</span><span class="s7">Veille personnelle + atelier BTS — 2024/2025</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">opacity</span><span class="s7">:</span><span class="s12">0.5</span><span class="s7">;</span><span class="s9">cursor</span><span class="s7">:</span><span class="s10">default</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span><span class="s7">Pratiqué ✔</span><span class="s8">&lt;/span&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-row&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-num&quot;</span><span class="s8">&gt;</span><span class="s7">02</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-body&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-title&quot;</span><span class="s8">&gt;</span><span class="s7">Recrudescence des ransomwares ciblant les collectivités locales en France</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-meta&quot;</span><span class="s8">&gt;</span><span class="s7">CERT-FR / ANSSI — 2024</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://www.cert.ssi.gouv.fr/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Lire →</span><span class="s8">&lt;/a&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-row&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-num&quot;</span><span class="s8">&gt;</span><span class="s7">03</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-body&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-title&quot;</span><span class="s8">&gt;</span><span class="s7">Bonne pratiques Active Directory : sécurisation des GPO et des comptes privilégiés</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-meta&quot;</span><span class="s8">&gt;</span><span class="s7">ANSSI — Guide d'hygiène informatique</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Lire →</span><span class="s8">&lt;/a&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-row&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-num&quot;</span><span class="s8">&gt;</span><span class="s7">04</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-body&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-title&quot;</span><span class="s8">&gt;</span><span class="s7">Injection SQL et sécurisation des applications web — OWASP Top 10</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-meta&quot;</span><span class="s8">&gt;</span><span class="s7">OWASP Foundation — 2024</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://owasp.org/www-project-top-ten/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Lire →</span><span class="s8">&lt;/a&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-row&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-num&quot;</span><span class="s8">&gt;</span><span class="s7">05</span><span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;article-body&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-title&quot;</span><span class="s8">&gt;</span><span class="s7">Authentification multi-facteurs (MFA) : pourquoi c'est devenu indispensable</span><span class="s8">&lt;/p&gt;</span>
+                        <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;article-meta&quot;</span><span class="s8">&gt;</span><span class="s7">The Hacker News — 2025</span><span class="s8">&lt;/p&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                    <span class="s8">&lt;a </span><span class="s9">class</span><span class="s10">=&quot;btn-sm&quot; </span><span class="s9">href</span><span class="s10">=&quot;https://thehackernews.com/&quot; </span><span class="s9">target</span><span class="s10">=&quot;_blank&quot; </span><span class="s9">rel</span><span class="s10">=&quot;noopener&quot;</span><span class="s8">&gt;</span><span class="s7">Lire →</span><span class="s8">&lt;/a&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span></pre>
+</body>
+</html>

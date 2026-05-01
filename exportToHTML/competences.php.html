@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>competences.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #9876aa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #2aacb8;}
+.s7 { color: #bcbec4;}
+.s8 { color: #d5b778;}
+.s9 { color: #bababa;}
+.s10 { color: #6aab73;}
+.s11 { color: #7a7e85;}
+.s12 { color: #2aacb8;}
+.s13 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+competences.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/competences.php — Tableau des compétences</span>
+ <span class="s2">*/</span>
+<span class="s3">$pageTitle   </span><span class="s4">= </span><span class="s5">'Compétences'</span><span class="s4">;</span>
+<span class="s3">$currentPage </span><span class="s4">= </span><span class="s5">'competences'</span><span class="s4">;</span>
+<span class="s3">$depth       </span><span class="s4">= </span><span class="s6">1</span><span class="s4">;</span>
+<span class="s0">require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/header.php'</span><span class="s4">;</span>
+<span class="s0">?&gt;</span>
+
+    <span class="s8">&lt;main </span><span class="s9">class</span><span class="s10">=&quot;page-wrapper&quot;</span><span class="s8">&gt;</span>
+
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-header&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;page-icon&quot;</span><span class="s8">&gt;</span><span class="s7">⚡</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;h1&gt;</span><span class="s7">Compétences</span><span class="s8">&lt;/h1&gt;</span>
+            <span class="s8">&lt;p&gt;</span><span class="s7">Compétences techniques et transversales développées durant le BTS SIO SLAM</span><span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Téléchargement du tableau de synthèse ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📥</span><span class="s8">&lt;/span&gt;</span><span class="s7">Tableau de synthèse officiel — Épreuve E4/E5</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;p </span><span class="s9">class</span><span class="s10">=&quot;muted&quot; </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">margin-bottom</span><span class="s7">: </span><span class="s12">16</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s7">Le tableau de synthèse recense l'ensemble des réalisations professionnelles réalisées</span>
+                <span class="s7">en formation et en milieu professionnel, avec les compétences associées du référentiel BTS SIO.</span>
+            <span class="s8">&lt;/p&gt;</span>
+            <span class="s8">&lt;a </span><span class="s9">href</span><span class="s10">=&quot;../assets/docs/tableau_synthese_BTS_SIO.xlsx&quot;</span>
+               <span class="s9">download</span><span class="s10">=&quot;Tableau_synthese_BTS_SIO_Ferreira_Da_Silva_Adriano.xlsx&quot;</span>
+               <span class="s9">class</span><span class="s10">=&quot;btn-download&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span&gt;</span><span class="s7">📊</span><span class="s8">&lt;/span&gt; </span><span class="s7">Télécharger le tableau de synthèse (.xlsx)</span>
+            <span class="s8">&lt;/a&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Catégories de compétences ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🏷️</span><span class="s8">&lt;/span&gt;</span><span class="s7">Vue d'ensemble</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skills-cols&quot;</span><span class="s8">&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🌐 Développement Web</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">HTML5</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">CSS3</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">JavaScript</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Bootstrap</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🗃️ Bases de données</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">MySQL</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">SQL Server</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">phpMyAdmin</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">💻 Langages</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Java</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">TypeScript</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">C#</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Python</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🛡️ Réseau </span><span class="s13">&amp;amp; </span><span class="s7">Sécurité</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">Active Directory</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">GPO</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">VPN</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Stormshield</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Cybersécurité</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Kali Linux</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🛠️ Outils </span><span class="s13">&amp;amp; </span><span class="s7">Méthodes</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">Git / GitHub</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">GLPI</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag good&quot;</span><span class="s8">&gt;</span><span class="s7">PhpStorm</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">VS Code</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">UML / Merise</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Microsoft 365</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;p </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">font-size</span><span class="s7">:</span><span class="s12">0.75</span><span class="s10">rem</span><span class="s7">; </span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--muted</span><span class="s7">); </span><span class="s9">margin-top</span><span class="s7">:</span><span class="s12">12</span><span class="s10">px</span><span class="s7">;</span><span class="s10">&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;span </span><span class="s9">style</span><span class="s10">=&quot;</span><span class="s9">color</span><span class="s7">:</span><span class="s8">var</span><span class="s7">(</span><span class="s8">--accent</span><span class="s7">)</span><span class="s10">&quot;</span><span class="s8">&gt;</span><span class="s7">■</span><span class="s8">&lt;/span&gt; </span><span class="s7">Vert = compétence maîtrisée et démontrable</span>
+            <span class="s8">&lt;/p&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Tableau détaillé ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">📊</span><span class="s8">&lt;/span&gt;</span><span class="s7">Tableau synthèse des compétences</span><span class="s8">&lt;/div&gt;</span>
+
+            <span class="s8">&lt;table </span><span class="s9">class</span><span class="s10">=&quot;skills-table&quot; </span><span class="s9">role</span><span class="s10">=&quot;table&quot; </span><span class="s9">aria-label</span><span class="s10">=&quot;Tableau des compétences BTS SIO SLAM&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;thead&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;th&gt;</span><span class="s7">Compétence</span><span class="s8">&lt;/th&gt;</span>
+                    <span class="s8">&lt;th&gt;</span><span class="s7">Niveau</span><span class="s8">&lt;/th&gt;</span>
+                    <span class="s8">&lt;th&gt;</span><span class="s7">Contexte d'acquisition</span><span class="s8">&lt;/th&gt;</span>
+                    <span class="s8">&lt;th&gt;</span><span class="s7">Démontrable</span><span class="s8">&lt;/th&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;/thead&gt;</span>
+                <span class="s8">&lt;tbody&gt;</span>
+                <span class="s11">&lt;!-- Développement --&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">HTML / CSS</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">BTS, projets, portfolio</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">PHP</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">BTS, PPE, projets perso</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">MySQL / SQL</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">BTS, PPE, exercices</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">JavaScript</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-debut&quot;</span><span class="s8">&gt;</span><span class="s7">Débutant</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Notions BTS, portfolio</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">TypeScript</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-debut&quot;</span><span class="s8">&gt;</span><span class="s7">Débutant</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Projets BTS (GSB, API REST)</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Java</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">PPE Java, cours BTS, WeatherQuest</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">C#</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-debut&quot;</span><span class="s8">&gt;</span><span class="s7">Débutant</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Projet DiiageCustomerApp</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Python</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-debut&quot;</span><span class="s8">&gt;</span><span class="s7">Débutant</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Initiation en cours BTS</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-no&quot;</span><span class="s8">&gt;</span><span class="s7">✗</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s11">&lt;!-- Réseau &amp; Sécu --&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Active Directory / GPO</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage Mairie, Stage OCI</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">VPN</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage Mairie de Ville-la-Grand</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Pare-feu Stormshield</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-debut&quot;</span><span class="s8">&gt;</span><span class="s7">Débutant</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage OCI Informatique</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Cybersécurité / Kali Linux</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">BTS — simulations MITM, SQL, DDoS</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Authentification 2FA</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Projet personnel PHP</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s11">&lt;!-- Outils --&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Git / GitHub</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Tous les projets BTS</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">GLPI</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage Mairie, cours BTS</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Microsoft 365 / Exchange</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage OCI, Stage Mairie</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Maintenance PC</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stage OCI 2021 </span><span class="s13">&amp;amp; </span><span class="s7">2025, Stage Mairie</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;tr&gt;</span>
+                    <span class="s8">&lt;td&gt;</span><span class="s7">Documentation technique</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;lv-badge lv-inter&quot;</span><span class="s8">&gt;</span><span class="s7">Intermédiaire</span><span class="s8">&lt;/span&gt;&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;muted&quot;</span><span class="s8">&gt;</span><span class="s7">Stages, BTS — TP et projets</span><span class="s8">&lt;/td&gt;</span>
+                    <span class="s8">&lt;td </span><span class="s9">class</span><span class="s10">=&quot;tick-yes&quot;</span><span class="s8">&gt;</span><span class="s7">✔</span><span class="s8">&lt;/td&gt;</span>
+                <span class="s8">&lt;/tr&gt;</span>
+                <span class="s8">&lt;/tbody&gt;</span>
+            <span class="s8">&lt;/table&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+        <span class="s11">&lt;!-- ── Compétences transversales ── --&gt;</span>
+        <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card&quot;</span><span class="s8">&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;card-title&quot;</span><span class="s8">&gt;&lt;span </span><span class="s9">class</span><span class="s10">=&quot;ct-icon&quot;</span><span class="s8">&gt;</span><span class="s7">🤝</span><span class="s8">&lt;/span&gt;</span><span class="s7">Compétences transversales</span><span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skills-cols&quot;</span><span class="s8">&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🗣️ Communication</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Expression écrite</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Présentation orale</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Documentation technique</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Sensibilisation utilisateurs</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-col&quot;</span><span class="s8">&gt;</span>
+                    <span class="s8">&lt;h3&gt;</span><span class="s7">🧩 Organisation</span><span class="s8">&lt;/h3&gt;</span>
+                    <span class="s8">&lt;div </span><span class="s9">class</span><span class="s10">=&quot;skill-tags&quot;</span><span class="s8">&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Gestion des priorités</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Travail en équipe</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Autonomie</span><span class="s8">&lt;/span&gt;</span>
+                        <span class="s8">&lt;span </span><span class="s9">class</span><span class="s10">=&quot;skill-tag&quot;</span><span class="s8">&gt;</span><span class="s7">Veille technologique</span><span class="s8">&lt;/span&gt;</span>
+                    <span class="s8">&lt;/div&gt;</span>
+                <span class="s8">&lt;/div&gt;</span>
+            <span class="s8">&lt;/div&gt;</span>
+        <span class="s8">&lt;/div&gt;</span>
+
+    <span class="s8">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s4">__DIR__ . </span><span class="s5">'/../includes/footer.php'</span><span class="s4">; </span><span class="s0">?&gt;</span></pre>
+</body>
+</html>

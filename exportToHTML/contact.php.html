@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>contact.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #5f826b; font-style: italic;}
+.s3 { color: #bcbec4;}
+.s4 { color: #7a7e85;}
+.s5 { color: #9876aa;}
+.s6 { color: #6aab73;}
+.s7 { color: #2aacb8;}
+.s8 { color: #bcbec4;}
+.s9 { color: #d5b778;}
+.s10 { color: #bababa;}
+.s11 { color: #6aab73;}
+.s12 { color: #7a7e85;}
+.s13 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+contact.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">/**</span>
+ <span class="s2">* pages/contact.php — Page de contact avec formulaire</span>
+ <span class="s2">*/</span>
+<span class="s3">session_start();</span>
+
+<span class="s4">// Récupérer et vider les messages flash</span>
+<span class="s5">$formSuccess </span><span class="s3">= </span><span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_success'</span><span class="s3">] ?? null;</span>
+<span class="s5">$formError   </span><span class="s3">= </span><span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_error'</span><span class="s3">]   ?? null;</span>
+<span class="s5">$prevNom     </span><span class="s3">= </span><span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_nom'</span><span class="s3">]     ?? </span><span class="s6">''</span><span class="s3">;</span>
+<span class="s5">$prevEmail   </span><span class="s3">= </span><span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_email'</span><span class="s3">]   ?? </span><span class="s6">''</span><span class="s3">;</span>
+<span class="s5">$prevMsg     </span><span class="s3">= </span><span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_msg'</span><span class="s3">]     ?? </span><span class="s6">''</span><span class="s3">;</span>
+
+<span class="s0">unset</span><span class="s3">(</span>
+    <span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_success'</span><span class="s3">],</span>
+    <span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_error'</span><span class="s3">],</span>
+    <span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_nom'</span><span class="s3">],</span>
+    <span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_email'</span><span class="s3">],</span>
+    <span class="s5">$_SESSION</span><span class="s3">[</span><span class="s6">'form_msg'</span><span class="s3">]</span>
+<span class="s3">);</span>
+
+<span class="s5">$pageTitle   </span><span class="s3">= </span><span class="s6">'Contact'</span><span class="s3">;</span>
+<span class="s5">$currentPage </span><span class="s3">= </span><span class="s6">'contact'</span><span class="s3">;</span>
+<span class="s5">$depth       </span><span class="s3">= </span><span class="s7">1</span><span class="s3">;</span>
+<span class="s0">require_once </span><span class="s3">__DIR__ . </span><span class="s6">'/../includes/header.php'</span><span class="s3">;</span>
+<span class="s0">?&gt;</span>
+
+<span class="s9">&lt;main </span><span class="s10">class</span><span class="s11">=&quot;page-wrapper&quot;</span><span class="s9">&gt;</span>
+
+  <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;page-header&quot;</span><span class="s9">&gt;</span>
+    <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;page-icon&quot;</span><span class="s9">&gt;</span><span class="s8">✉️</span><span class="s9">&lt;/div&gt;</span>
+    <span class="s9">&lt;h1&gt;</span><span class="s8">Contact</span><span class="s9">&lt;/h1&gt;</span>
+    <span class="s9">&lt;p&gt;</span><span class="s8">Vous souhaitez me contacter ? N'hésitez pas à utiliser le formulaire ou mes réseaux.</span><span class="s9">&lt;/p&gt;</span>
+  <span class="s9">&lt;/div&gt;</span>
+
+  <span class="s12">&lt;!-- Messages flash PHP --&gt;</span>
+  <span class="s0">&lt;?php if </span><span class="s3">(</span><span class="s5">$formSuccess</span><span class="s3">): </span><span class="s0">?&gt;</span>
+    <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;form-success&quot; </span><span class="s10">role</span><span class="s11">=&quot;alert&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">margin-bottom</span><span class="s8">: </span><span class="s13">20</span><span class="s11">px</span><span class="s8">;</span><span class="s11">&quot;</span><span class="s9">&gt;</span>
+      <span class="s9">&lt;span&gt;</span><span class="s8">✅</span><span class="s9">&lt;/span&gt; </span><span class="s0">&lt;?= </span><span class="s3">htmlspecialchars(</span><span class="s5">$formSuccess</span><span class="s3">) </span><span class="s0">?&gt;</span>
+    <span class="s9">&lt;/div&gt;</span>
+  <span class="s0">&lt;?php elseif </span><span class="s3">(</span><span class="s5">$formError</span><span class="s3">): </span><span class="s0">?&gt;</span>
+    <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;form-error&quot; </span><span class="s10">role</span><span class="s11">=&quot;alert&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">margin-bottom</span><span class="s8">: </span><span class="s13">20</span><span class="s11">px</span><span class="s8">;</span><span class="s11">&quot;</span><span class="s9">&gt;</span>
+      <span class="s9">&lt;span&gt;</span><span class="s8">⚠️</span><span class="s9">&lt;/span&gt; </span><span class="s0">&lt;?= </span><span class="s3">htmlspecialchars(</span><span class="s5">$formError</span><span class="s3">) </span><span class="s0">?&gt;</span>
+    <span class="s9">&lt;/div&gt;</span>
+  <span class="s0">&lt;?php endif</span><span class="s3">; </span><span class="s0">?&gt;</span>
+
+  <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;card&quot;</span><span class="s9">&gt;</span>
+    <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-layout&quot;</span><span class="s9">&gt;</span>
+
+      <span class="s12">&lt;!-- Infos de contact --&gt;</span>
+      <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-items&quot;</span><span class="s9">&gt;</span>
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;card-title&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">margin-bottom</span><span class="s8">: </span><span class="s13">14</span><span class="s11">px</span><span class="s8">;</span><span class="s11">&quot;</span><span class="s9">&gt;&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ct-icon&quot;</span><span class="s9">&gt;</span><span class="s8">📋</span><span class="s9">&lt;/span&gt;</span><span class="s8">Coordonnées</span><span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-item&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ci-icon&quot;</span><span class="s9">&gt;</span><span class="s8">📧</span><span class="s9">&lt;/span&gt;</span>
+          <span class="s9">&lt;a </span><span class="s10">href</span><span class="s11">=&quot;mailto:adriano.ferreiradasilva74@gmail.com&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">color</span><span class="s8">:</span><span class="s9">var</span><span class="s8">(</span><span class="s9">--text</span><span class="s8">);</span><span class="s11">&quot;</span><span class="s9">&gt;</span>
+            <span class="s8">adriano.ferreiradasilva74@gmail.com</span>
+          <span class="s9">&lt;/a&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-item&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ci-icon&quot;</span><span class="s9">&gt;</span><span class="s8">📱</span><span class="s9">&lt;/span&gt;</span>
+          <span class="s9">&lt;span&gt;</span><span class="s8">07 69 49 34 74</span><span class="s9">&lt;/span&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-item&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ci-icon&quot;</span><span class="s9">&gt;</span><span class="s8">🔗</span><span class="s9">&lt;/span&gt;</span>
+          <span class="s9">&lt;a </span><span class="s10">href</span><span class="s11">=&quot;https://www.linkedin.com/in/adriano-ferreira-da-silva-382138339/&quot;</span>
+             <span class="s10">target</span><span class="s11">=&quot;_blank&quot; </span><span class="s10">rel</span><span class="s11">=&quot;noopener&quot;</span><span class="s9">&gt;</span>
+            <span class="s8">LinkedIn — Adriano Ferreira Da Silva</span>
+          <span class="s9">&lt;/a&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-item&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ci-icon&quot;</span><span class="s9">&gt;</span><span class="s8">🐙</span><span class="s9">&lt;/span&gt;</span>
+          <span class="s9">&lt;a </span><span class="s10">href</span><span class="s11">=&quot;https://github.com/Adriano74f&quot; </span><span class="s10">target</span><span class="s11">=&quot;_blank&quot; </span><span class="s10">rel</span><span class="s11">=&quot;noopener&quot;</span><span class="s9">&gt;</span>
+            <span class="s8">GitHub — Adriano74f</span>
+          <span class="s9">&lt;/a&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;contact-item&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ci-icon&quot;</span><span class="s9">&gt;</span><span class="s8">📄</span><span class="s9">&lt;/span&gt;</span>
+          <span class="s9">&lt;a </span><span class="s10">href</span><span class="s11">=&quot;../img/Ferreira-Da-Silva-Adriano-CV.pdf&quot; </span><span class="s10">target</span><span class="s11">=&quot;_blank&quot;</span><span class="s9">&gt;</span>
+            <span class="s8">Télécharger le CV (PDF)</span>
+          <span class="s9">&lt;/a&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+      <span class="s9">&lt;/div&gt;</span>
+
+      <span class="s12">&lt;!-- Formulaire --&gt;</span>
+      <span class="s9">&lt;form </span><span class="s10">class</span><span class="s11">=&quot;contact-form&quot;</span>
+            <span class="s10">id</span><span class="s11">=&quot;contactForm&quot;</span>
+            <span class="s10">action</span><span class="s11">=&quot;../php/contact.php&quot;</span>
+            <span class="s10">method</span><span class="s11">=&quot;POST&quot;</span>
+            <span class="s10">novalidate</span><span class="s9">&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;card-title&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">margin-bottom</span><span class="s8">: </span><span class="s13">14</span><span class="s11">px</span><span class="s8">;</span><span class="s11">&quot;</span><span class="s9">&gt;&lt;span </span><span class="s10">class</span><span class="s11">=&quot;ct-icon&quot;</span><span class="s9">&gt;</span><span class="s8">✏️</span><span class="s9">&lt;/span&gt;</span><span class="s8">Envoyer un message</span><span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;form-group&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;label </span><span class="s10">for</span><span class="s11">=&quot;nom&quot;</span><span class="s9">&gt;</span><span class="s8">Nom complet</span><span class="s9">&lt;/label&gt;</span>
+          <span class="s9">&lt;input</span>
+            <span class="s10">type</span><span class="s11">=&quot;text&quot;</span>
+            <span class="s10">id</span><span class="s11">=&quot;nom&quot;</span>
+            <span class="s10">name</span><span class="s11">=&quot;nom&quot;</span>
+            <span class="s10">required</span>
+            <span class="s10">placeholder</span><span class="s11">=&quot;Prénom NOM&quot;</span>
+            <span class="s10">value</span><span class="s11">=&quot;</span><span class="s0">&lt;?= </span><span class="s3">htmlspecialchars(</span><span class="s5">$prevNom</span><span class="s3">) </span><span class="s0">?&gt;</span><span class="s11">&quot;</span>
+            <span class="s10">autocomplete</span><span class="s11">=&quot;name&quot;</span>
+          <span class="s9">/&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;form-group&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;label </span><span class="s10">for</span><span class="s11">=&quot;email&quot;</span><span class="s9">&gt;</span><span class="s8">Adresse e-mail</span><span class="s9">&lt;/label&gt;</span>
+          <span class="s9">&lt;input</span>
+            <span class="s10">type</span><span class="s11">=&quot;email&quot;</span>
+            <span class="s10">id</span><span class="s11">=&quot;email&quot;</span>
+            <span class="s10">name</span><span class="s11">=&quot;email&quot;</span>
+            <span class="s10">required</span>
+            <span class="s10">placeholder</span><span class="s11">=&quot;exemple@mail.com&quot;</span>
+            <span class="s10">value</span><span class="s11">=&quot;</span><span class="s0">&lt;?= </span><span class="s3">htmlspecialchars(</span><span class="s5">$prevEmail</span><span class="s3">) </span><span class="s0">?&gt;</span><span class="s11">&quot;</span>
+            <span class="s10">autocomplete</span><span class="s11">=&quot;email&quot;</span>
+          <span class="s9">/&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;div </span><span class="s10">class</span><span class="s11">=&quot;form-group&quot;</span><span class="s9">&gt;</span>
+          <span class="s9">&lt;label </span><span class="s10">for</span><span class="s11">=&quot;message&quot;</span><span class="s9">&gt;</span><span class="s8">Message</span><span class="s9">&lt;/label&gt;</span>
+          <span class="s9">&lt;textarea</span>
+            <span class="s10">id</span><span class="s11">=&quot;message&quot;</span>
+            <span class="s10">name</span><span class="s11">=&quot;message&quot;</span>
+            <span class="s10">required</span>
+            <span class="s10">rows</span><span class="s11">=&quot;5&quot;</span>
+            <span class="s10">placeholder</span><span class="s11">=&quot;Bonjour, je vous contacte au sujet de...&quot;</span>
+          <span class="s9">&gt;</span><span class="s0">&lt;?= </span><span class="s3">htmlspecialchars(</span><span class="s5">$prevMsg</span><span class="s3">) </span><span class="s0">?&gt;</span><span class="s9">&lt;/textarea&gt;</span>
+        <span class="s9">&lt;/div&gt;</span>
+
+        <span class="s9">&lt;button </span><span class="s10">type</span><span class="s11">=&quot;submit&quot; </span><span class="s10">class</span><span class="s11">=&quot;btn btn-primary&quot; </span><span class="s10">style</span><span class="s11">=&quot;</span><span class="s10">align-self</span><span class="s8">: </span><span class="s11">flex-start</span><span class="s8">;</span><span class="s11">&quot;</span><span class="s9">&gt;</span>
+          <span class="s8">Envoyer le message →</span>
+        <span class="s9">&lt;/button&gt;</span>
+
+      <span class="s9">&lt;/form&gt;</span>
+
+    <span class="s9">&lt;/div&gt;</span>
+  <span class="s9">&lt;/div&gt;</span>
+
+<span class="s9">&lt;/main&gt;</span>
+
+<span class="s0">&lt;?php require_once </span><span class="s3">__DIR__ . </span><span class="s6">'/../includes/footer.php'</span><span class="s3">; </span><span class="s0">?&gt;</span>
+</pre>
+</body>
+</html>
