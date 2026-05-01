@@ -324,6 +324,84 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
+                <!-- Introduction to Cybersecurity — Cisco -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">🔰</div>
+                    <p class="cert-name">Introduction to Cybersecurity</p>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">Badge obtenu · Credly</p>
+                    <p class="cert-desc">
+                        Ce cours introduit le paysage de la cybersécurité : types de menaces (malwares, phishing,
+                        ingénierie sociale, ransomwares), principes fondamentaux de la triade CIA (Confidentialité,
+                        Intégrité, Disponibilité) et aperçu des métiers de la cybersécurité. Il permet de comprendre
+                        pourquoi la sécurité est critique dans le monde numérique d'aujourd'hui et constitue
+                        le point d'entrée idéal pour toute spécialisation en cybersécurité.
+                    </p>
+                    <span class="cert-status">✔ Badge obtenu</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir sur Credly →</a>
+                    </div>
+                </div>
+
+                <!-- Cyber Threat Management — Cisco -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">⚠️</div>
+                    <p class="cert-name">Cyber Threat Management</p>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">Badge obtenu · Credly</p>
+                    <p class="cert-desc">
+                        Ce cours aborde la gestion des cybermenaces dans un contexte professionnel :
+                        gouvernance de la sécurité, cadres de gestion des risques (NIST, ISO 27001),
+                        évaluation des vulnérabilités, procédures de réponse aux incidents et de
+                        continuité d'activité. On y apprend également les bases de l'investigation
+                        forensique numérique et de la threat intelligence, compétences clés pour un
+                        futur analyste SOC ou responsable sécurité.
+                    </p>
+                    <span class="cert-status">✔ Badge obtenu</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir sur Credly →</a>
+                    </div>
+                </div>
+
+                <!-- JavaScript Essentials 1 — Cisco -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">🟨</div>
+                    <p class="cert-name">JavaScript Essentials 1</p>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">Badge obtenu · Credly</p>
+                    <p class="cert-desc">
+                        Première partie du parcours JS de Cisco NetAcad : variables, types de données
+                        (nombres, chaînes, booléens), opérateurs, structures de contrôle (conditions,
+                        boucles) et fonctions. Cette base JavaScript est utile non seulement pour le
+                        développement web, mais aussi en cybersécurité pour comprendre les failles XSS,
+                        les injections de scripts et automatiser certaines analyses côté client.
+                    </p>
+                    <span class="cert-status">✔ Badge obtenu</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir sur Credly →</a>
+                    </div>
+                </div>
+
+                <!-- Python Essentials 1 — Cisco -->
+                <div class="cert-card">
+                    <div class="cert-badge-wrap">🐍</div>
+                    <p class="cert-name">Python Essentials 1</p>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">Badge obtenu · Credly</p>
+                    <p class="cert-desc">
+                        Introduction à Python via le programme officiel Cisco NetAcad : syntaxe de base,
+                        variables, structures de données (listes, tuples, dictionnaires), fonctions et
+                        gestion des fichiers. Python est le langage de référence en cybersécurité pour
+                        l'automatisation, le scripting d'outils (scanners, parsers de logs, exploits),
+                        et l'analyse de données. Cette certification pose les bases indispensables pour
+                        aller plus loin en cybersécurité offensive et défensive.
+                    </p>
+                    <span class="cert-status">✔ Badge obtenu</span>
+                    <div class="project-links">
+                        <a class="btn-sm" href="https://www.credly.com/users/adriano-ferreira-da-silva" target="_blank" rel="noopener">Voir sur Credly →</a>
+                    </div>
+                </div>
+
                 <!-- SecNumAcadémie -->
                 <div class="cert-card">
                     <div class="cert-badge-wrap">🔐</div>
@@ -347,6 +425,176 @@ require_once __DIR__ . '/../includes/header.php';
 
             <p class="muted" style="margin-top:16px;font-size:.72rem;font-family:var(--font-mono);">
                 ⚡ Page mise à jour régulièrement au fur et à mesure de l'obtention de nouvelles certifications.
+            </p>
+        </div>
+
+        <!-- ── Compétences acquises ── -->
+        <div class="card">
+            <div class="card-title"><span class="ct-icon">🧠</span>Compétences développées grâce à mes certifications</div>
+            <p class="muted" style="margin-bottom:18px;">
+                Synthèse des savoir-faire concrets que j'ai développés à travers l'ensemble de mes certifications obtenues.
+            </p>
+            <div class="eval-grid">
+
+                <div class="eval-block">
+                    <h4>🌐 Sécurité réseau</h4>
+                    <p>Pare-feux, ACL, VPN, segmentation, DMZ, IDS/IPS, surveillance du trafic.
+                    Compétences acquises via <em>Network Defense</em> (Cisco).</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>⚠️ Gestion des menaces</h4>
+                    <p>Identification des cybermenaces, gouvernance, gestion des risques (NIST/ISO 27001),
+                    réponse aux incidents. Via <em>Cyber Threat Management</em> (Cisco).</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>🔰 Culture cybersécurité</h4>
+                    <p>Triade CIA, types d'attaques (malwares, phishing, ransomwares), sensibilisation
+                    et panorama des métiers. Via <em>Introduction to Cybersecurity</em> (Cisco) et <em>Pix</em>.</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>🐍 Scripting Python</h4>
+                    <p>Syntaxe, structures de données, fonctions, automatisation. Base indispensable
+                    pour l'outillage en cybersécurité. Via <em>Python Essentials 1</em> (Cisco).</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>🟨 JavaScript &amp; Web</h4>
+                    <p>DOM, événements, fonctions, logique de programmation côté client. Utile pour
+                    comprendre les failles XSS et injections. Via <em>JS Essentials 1</em> et <em>OC JavaScript</em>.</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>🔗 APIs &amp; Back-end</h4>
+                    <p>Architecture REST, méthodes HTTP, JSON, authentification par token, bonnes pratiques
+                    de sécurité API. Via <em>Adoptez les API REST</em> (OpenClassrooms).</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>🧪 Tests &amp; Qualité</h4>
+                    <p>PHPUnit, Panther, couverture de code, CI/CD. La culture du test garantit
+                    des applications plus sûres et fiables. Via <em>Tests fonctionnels Symfony</em> (OC).</p>
+                </div>
+
+                <div class="eval-block">
+                    <h4>💻 Compétences numériques</h4>
+                    <p>Information, communication, création de contenu, protection des données et
+                    environnement numérique. Socle certifié par l'État. Via <em>Certification Pix</em>.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ── Certifications visées ── -->
+        <div class="card">
+            <div class="card-title"><span class="ct-icon">🎯</span>Certifications visées pour mon parcours en cybersécurité</div>
+            <p class="muted" style="margin-bottom:20px;">
+                Pour préparer au mieux mon Bachelor Cybersécurité et renforcer mon profil sur le marché,
+                voici les certifications que je souhaite obtenir. Elles couvrent aussi bien les aspects
+                défensifs qu'offensifs, avec une progression logique du fondamental à l'avancé.
+            </p>
+
+            <!-- Gratuites -->
+            <h3 style="font-family:var(--font-display);font-size:.82rem;font-weight:700;color:var(--c1);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;">
+                ✅ Certifications gratuites
+            </h3>
+            <div class="skills-table-wrap">
+                <table class="skills-table" style="margin-bottom:26px;">
+                    <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>Organisme</th>
+                        <th>Compétences visées</th>
+                        <th>Pourquoi ?</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>SecNumAcadémie</td>
+                        <td class="muted">ANSSI</td>
+                        <td class="muted">Réseaux, crypto, gestion des risques</td>
+                        <td class="muted">Référence française, reconnue par les recruteurs publics</td>
+                    </tr>
+                    <tr>
+                        <td>Python Essentials 2</td>
+                        <td class="muted">Cisco NetAcad</td>
+                        <td class="muted">POO, modules, exceptions, scripting avancé</td>
+                        <td class="muted">Compléter Python Essentials 1 pour automatiser en cybersécurité</td>
+                    </tr>
+                    <tr>
+                        <td>Cybersecurity Essentials</td>
+                        <td class="muted">Cisco NetAcad</td>
+                        <td class="muted">Cryptographie, sécurité OS, protocoles sécurisés</td>
+                        <td class="muted">Approfondissement de l'intro cybersécurité déjà obtenue</td>
+                    </tr>
+                    <tr>
+                        <td>Google Cybersecurity Certificate</td>
+                        <td class="muted">Google / Coursera</td>
+                        <td class="muted">SOC, SIEM, détection, réponse incidents</td>
+                        <td class="muted">Parcours pro reconnu, prépare aux métiers d'analyste SOC</td>
+                    </tr>
+                    <tr>
+                        <td>Pre-Security Path</td>
+                        <td class="muted">TryHackMe</td>
+                        <td class="muted">Linux, réseau, web, scripting</td>
+                        <td class="muted">Mise en pratique interactive, idéal avant le Bachelor</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Payantes -->
+            <h3 style="font-family:var(--font-display);font-size:.82rem;font-weight:700;color:var(--c2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;margin-top:8px;">
+                💳 Certifications payantes (objectifs moyen terme)
+            </h3>
+            <div class="skills-table-wrap">
+                <table class="skills-table">
+                    <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>Organisme</th>
+                        <th>Compétences visées</th>
+                        <th>Prix indicatif</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>CompTIA Security+</td>
+                        <td class="muted">CompTIA</td>
+                        <td class="muted">Sécurité réseau, gestion des menaces, cryptographie</td>
+                        <td style="color:var(--c4);font-family:var(--font-mono);">~390 €</td>
+                    </tr>
+                    <tr>
+                        <td>eJPT — Junior Penetration Tester</td>
+                        <td class="muted">eLearnSecurity</td>
+                        <td class="muted">Pentest débutant, reconnaissance, exploitation</td>
+                        <td style="color:var(--c4);font-family:var(--font-mono);">~200 $</td>
+                    </tr>
+                    <tr>
+                        <td>Cisco CyberOps Associate</td>
+                        <td class="muted">Cisco</td>
+                        <td class="muted">Opérations SOC, analyse de logs, surveillance réseau</td>
+                        <td style="color:var(--c4);font-family:var(--font-mono);">~330 $</td>
+                    </tr>
+                    <tr>
+                        <td>CEH — Certified Ethical Hacker</td>
+                        <td class="muted">EC-Council</td>
+                        <td class="muted">Ethical hacking, pentest avancé, exploitation</td>
+                        <td style="color:var(--c3);font-family:var(--font-mono);">~950 €</td>
+                    </tr>
+                    <tr>
+                        <td>OSCP — Offensive Security</td>
+                        <td class="muted">Offensive Security</td>
+                        <td class="muted">Pentest avancé, exploitation, post-exploitation</td>
+                        <td style="color:var(--c3);font-family:var(--font-mono);">~1 499 $</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="muted" style="margin-top:14px;font-size:.72rem;font-family:var(--font-mono);">
+                ⚡ Prix indicatifs. Des réductions étudiantes et des vouchers sont souvent disponibles pour CompTIA et eLearnSecurity.
             </p>
         </div>
 
